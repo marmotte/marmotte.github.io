@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>re:inventing the wheel</title>
-    <link>http://blog.eksy.tokyo/</link>
-    <description>Recent content on re:inventing the wheel</description>
+    <title>Posts on re:inventing the wheel</title>
+    <link>http://blog.eksy.tokyo/post/</link>
+    <description>Recent content in Posts on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 01 Mar 2018 20:06:24 +0900</lastBuildDate>
     
-	<atom:link href="http://blog.eksy.tokyo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.eksy.tokyo/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>

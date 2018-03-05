@@ -3,17 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.eksy.tokyo/post/starting_hugo/</loc>
+    <lastmod>2018-03-01T20:06:24+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.eksy.tokyo/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>http://blog.eksy.tokyo/tags/hugo/</loc>
+    <lastmod>2018-03-01T20:06:24+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.eksy.tokyo/post/</loc>
+    <lastmod>2018-03-01T20:06:24+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.eksy.tokyo/tags/</loc>
+    <lastmod>2018-03-01T20:06:24+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.eksy.tokyo/</loc>
+    <lastmod>2018-03-01T20:06:24+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/</loc>
+    <lastmod>2018-03-01T20:06:24+09:00</lastmod>
     <priority>0</priority>
   </url>
   
