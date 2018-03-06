@@ -81,56 +81,60 @@ ga('send', 'pageview');
 
 
 <section class="panel panel-default">
-<div class="panel-heading">
-<div class="panel-title">Author</div>
-</div>
-<div id="gravatar-aside-profile" style="clear:both">
-  <div style="height:2em"><span style="color:#ccc;font-size:small">loading profile f
-rom gravatar...</span></div>
-</div>
-<div style="clear:both"></div>
-<script type="text/javascript">
-$(function(){
-  var url = "http://www.gravatar.com/cdd605858f695128532412f701153985.json?callback=?";
-  var $box = $("#gravatar-aside-profile")
-  var $msg = $box.children().children()
-  var blink = function(a){a.fadeOut(400).fadeIn(400)};
-  var intervalID = window.setInterval(blink, 1500, $msg)
-  var setupProfile = function(data) {
-    var entry = data.entry[0]
-    $box
-    .empty()
-    .css("padding", 12)
-    .append($("<img>")
-    .attr("src", entry.thumbnailUrl)
-    .attr("alt", "thumbnail from Gravatar")
-    .css("float", "left")
-    .css("margin-right", 5)
-  )
-  .append($("<div>")
-  .css("padding", "5px 0px")
-  .append($("<h2>")
-  .css("margin-bottom", 5)
-  .append("<a href='" + entry.profileUrl + "'>" + entry.displayName + "</a>")
-)
-.append($("<div>")
-.css("clear", "both")
-.css("margin", 0)
-.css("font-size", "90%")
-.html(entry.aboutMe.replace(/\n/g, "<br/>"))
-)
-)
-}
-var clearInterval = function(){window.clearInterval(intervalID)}
-var updateMessageToError = function(){$msg.stop().fadeOut().text("profile load failed.").fadeIn()}
-jQuery.getJSON(url)
-.always(clearInterval)
-.done(setupProfile)
-.fail(updateMessageToError)
-})
-</script>
+  <div class="panel-heading">
+    <div class="panel-title">AUTHOR</div>
+  </div>
+  <div id="gravatar-aside-profile" style="clear:both">
+    <div style="height:2em"><span style="color:#ccc;font-size:small">loading profile from gravatar...</span></div>
+  </div>
+  <div style="clear:both"></div>
+  <script type="text/javascript">
+      $(function () {
+          var url = "http://www.gravatar.com/cdd605858f695128532412f701153985.json?callback=?";
+          var $box = $("#gravatar-aside-profile")
+          var $msg = $box.children().children()
+          var blink = function (a) {
+            a.fadeOut(400).fadeIn(400)
+          };
+          var intervalID = window.setInterval(blink, 1500, $msg)
+          var setupProfile = function (data) {
+            var entry = data.entry[0]
+            $box
+              .empty()
+              .css("padding", 12)
+              .append($("<img>")
+                .attr("src", entry.thumbnailUrl)
+                .attr("alt", "thumbnail from Gravatar")
+                .css("float", "left")
+                .css("margin-right", 5)
+              )
+              .append($("<div>")
+                .css("padding", "5px 0px")
+                .append($("<h2>")
+                  .css("margin-bottom", 5)
+                  .append("<a href='" + entry.profileUrl + "'>" + entry.displayName + "</a>")
+                )
+                .append($("<div>")
+                  .css("clear", "both")
+                  .css("margin", 0)
+                  .css("font-size", "90%")
+                  .html(entry.aboutMe.replace(/\n/g, "<br/>"))
+                )
+              )
+          }
+          var clearInterval = function () {
+            window.clearInterval(intervalID)
+          }
+          var updateMessageToError = function () {
+            $msg.stop().fadeOut().text("profile load failed.").fadeIn()
+          }
+          jQuery.getJSON(url)
+            .always(clearInterval)
+            .done(setupProfile)
+            .fail(updateMessageToError)
+      })
+  </script>
 </section>
-
 
 
 
@@ -154,6 +158,8 @@ jQuery.getJSON(url)
       
       <a href="http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/" class="list-group-item">エンジアブログ</a>
       
+      <a href="http://blog.eksy.tokyo/tags/%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88/" class="list-group-item">クイックスタート</a>
+      
     </div>
   </section>
 
@@ -176,6 +182,8 @@ jQuery.getJSON(url)
     <div class="list-group">
       
       <a href="http://blog.eksy.tokyo/tags/hugo" class="list-group-item">hugo</a>
+      
+      <a href="http://blog.eksy.tokyo/tags/%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88" class="list-group-item">クイックスタート</a>
       
     </div>
   </section>
