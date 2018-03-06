@@ -8,29 +8,29 @@
 
 
 
-<link rel="canonical" href="http://blog.eksy.tokyo/post/starting_hugo/">
+<link rel="canonical" href="http://blog.eksy.tokyo/post/gravatar-on-hugo/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>HUGOで始めるブロガー生活 - re:inventing the wheel</title>
+    <title>GravatarのプロフィールをHUGOで表示する - re:inventing the wheel</title>
     
-<meta name="description" content="HUGOで始めるブロガー生活 インストールから基本設定">
+<meta name="description" content="GravatarのプロフィールをHUGOで表示する">
 
-<meta property="og:title" content="HUGOで始めるブロガー生活 - re:inventing the wheel">
+<meta property="og:title" content="GravatarのプロフィールをHUGOで表示する - re:inventing the wheel">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://blog.eksy.tokyo/post/starting_hugo/">
+<meta property="og:url" content="http://blog.eksy.tokyo/post/gravatar-on-hugo/">
 <meta property="og:image" content="http://blog.eksy.tokyo/images/default.png">
 <meta property="og:site_name" content="re:inventing the wheel">
-<meta property="og:description" content="HUGOで始めるブロガー生活 インストールから基本設定">
+<meta property="og:description" content="GravatarのプロフィールをHUGOで表示する">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="re:inventing the wheel">
-<meta name="twitter:url" content="http://blog.eksy.tokyo/post/starting_hugo/">
-<meta name="twitter:title" content="HUGOで始めるブロガー生活 - re:inventing the wheel">
-<meta name="twitter:description" content="HUGOで始めるブロガー生活 インストールから基本設定">
+<meta name="twitter:url" content="http://blog.eksy.tokyo/post/gravatar-on-hugo/">
+<meta name="twitter:title" content="GravatarのプロフィールをHUGOで表示する - re:inventing the wheel">
+<meta name="twitter:description" content="GravatarのプロフィールをHUGOで表示する">
 <meta name="twitter:image" content="http://blog.eksy.tokyo/images/default.png">
 
 
@@ -42,15 +42,15 @@
       "@type": "WebPage",
       "@id":"http://blog.eksy.tokyo/"
     },
-    "headline": "HUGOで始めるブロガー生活 - re:inventing the wheel",
+    "headline": "GravatarのプロフィールをHUGOで表示する - re:inventing the wheel",
     "image": {
       "@type": "ImageObject",
       "url": "http://blog.eksy.tokyo/images/default.png",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2018-03-01T20:06:24JST",
-    "dateModified": "2018-03-01T20:06:24JST",
+    "datePublished": "2018-03-02T19:38:37JST",
+    "dateModified": "2018-03-02T19:38:37JST",
     "author": {
       "@type": "Person",
       "name": "re:inventing the wheel"
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": "HUGOで始めるブロガー生活 インストールから基本設定"
+    "description": "GravatarのプロフィールをHUGOで表示する"
   }
 </script>
 
@@ -121,144 +121,130 @@ ga('send', 'pageview');
         
         <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://blog.eksy.tokyo/post/" itemprop="url"><span itemprop="title">post</span></a></li>
         
-        <li class="active">HUGOで始めるブロガー生活</li>
+        <li class="active">GravatarのプロフィールをHUGOで表示する</li>
       </ol>
     </nav>
 
     <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-01T20:06:24JST">Mar 1, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-02T19:38:37JST">Mar 2, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
       
     </ul>
 
-    <h1 class="title">HUGOで始めるブロガー生活</h1>
+    <h1 class="title">GravatarのプロフィールをHUGOで表示する</h1>
   </header>
 
   
 
-  <div class="article-body"><p>以前、別ドメインで<a href="http://octopress.org/">Octopress</a>+<a href="https://pages.github.com/">GitHub Pages</a>でブログを立ち上げていましたが、更新が滞り早数年。
-ドメイン廃止を期に、<a href="https://gohugo.io/">HUGO</a>を使って心機一転ブログを立て直すことにいたしました。<br />
-自分的にOctopressは、作業PCの入れ替え後に環境構築を怠り放置する結果になってしまったので、インストールが楽なものという事で、、、</p>
+  <div class="article-body"><p>Octopressの頃から<a href="https://en.gravatar.com/alalwww">ある(@alalwww)</a>さんの作成された<code>Gravatar aside in Octopress</code>を利用して
+<a href="https://en.gravatar.com">Gravatar</a>からプロフィール表示をしていましたが、HUGOでも利用したいと思いポーティングしてみました。<br />
+と言っても、基本的にはHUGOが利用するGo言語の<a href="https://golang.org/pkg/html/template/">テンプレートライブラリ</a>の記法に置き換えただけです。
+</p>
 
-<p>
-このエントリーではHUGOのインストールから記事・静的サイト生成までの一連の流れをクイックスタートとして備忘録として残すことにします。</p>
+<h2 id="gravatar-aside-in-octopress関連のページ">Gravatar aside in Octopress関連のページ</h2>
 
-<h2 id="クイックスタート">クイックスタート</h2>
+<ul>
+<li>ある(@alalwww)さんのブログ記事: <a href="http://blog.awairo.net/blog/2013/12/24/octopress-aside-of-getting-profile-from-gravatar/">AwAlog</a></li>
+<li>GitHubのリポジトリ: <a href="https://github.com/alalwww/gravatar-aside">alalwww/gravatar-aside</a></li>
+</ul>
 
-<h3 id="hugoのインストール">HUGOのインストール</h3>
+<h2 id="設定ファイル-config-tomlの編集">設定ファイル: config.tomlの編集</h2>
 
-<p>macOS使いのため、<a href="https://brew.sh/index_ja">Homebrew</a>からインストールします。</p>
+<p>HUGOでは、サイト全体で利用する<a href="https://gohugo.io/variables/site/">任意のパラメータ</a>は<code>[Params]</code>テーブル内に記述します。
+ここでは、Gravatarに登録したEメールのMD5ハッシュを<code>gravatar_hash</code>に設定します。</p>
 
-<pre><code>$ brew install hugo
+<pre><code>[Params]
+  gravatar_hash = &quot;a957567ba0ce0106c0d1cfa646acdb71&quot; # Gravatar hashed value of an email address
 </code></pre>
 
-<p>これだけでインストール出来てしまうのでとても簡単ですね。macOS以外へのインストールや詳細手順はオフィシャルドキュメント<a href="https://gohugo.io/getting-started/installing/">Install Hugo</a>をご覧下さい。<br />
-macOSの他、Windows/Linux/FreeBSDにも対応しているようです。ただパッとみた感じ、RHEL系のLinuxにインストールするのは一癖あるかもしれないです。
-この辺りはいずれ試すと思いますのでその時に別途記事にしたいと思います。</p>
+<p>この設定を追加することで、テンプレート内から<code>.Site.Prams.gravatar_hash</code>として参照できるようになります。</p>
 
-<h3 id="サイト構成情報-skelton-の作成">サイト構成情報(Skelton)の作成</h3>
+<p>なお、メールアドレスのMD5ハッシュは以下のコマンドで取得できます。</p>
 
-<p>HUGOで生成するコンテンツの設定ファイル格納するディレクトリを作成します。
-ここでは、<code>my-site</code>という名前で作成する例です。</p>
-
-<pre><code>$ hugo new site my-site
-$ cd my-site
+<pre><code>$ md5 -s &quot;MyEmailAddress@example.com&quot;
+MD5 (&quot;MyEmailAddress@example.com&quot;) = a957567ba0ce0106c0d1cfa646acdb71
 </code></pre>
 
-<p>コマンドを実行すると、以下の様なディレクトリ構成でスケルトンが作成されます。</p>
+<h2 id="partialsの作成">partialsの作成</h2>
 
-<pre><code>my-site
-├── archetypes/
-│   └── default.md
-├── config.toml
-├── content/
-├── data/
-├── layouts/
-├── static/
-└── themes/
+<p>HUGOは、<a href="https://gohugo.io/templates/partials/">partials</a>を定義することで、テンプレートをコンポーネントとして再利用することができます。
+配置場所はサイト構成情報のディレクトリ直下の<code>layouts/partials</code>またはテーマディレクトリ内の<code>layouts/partials</code>に設置可能です。<br />
+テーマ側をあまりいじりたくなかったので、今回はサイト構成情報ディレクトリ直下に配置することにしました。</p>
+
+<p><code>layouts/partials/gravatar.html</code></p>
+
+<pre><code>{{ if .Site.Params.gravatar_hash }}
+&lt;section&gt;
+  &lt;div id=&quot;gravatar-aside-profile&quot; style=&quot;clear:both&quot;&gt;
+    &lt;div style=&quot;height:2em&quot;&gt;&lt;span style=&quot;color:#ccc;font-size:small&quot;&gt;loading profile from gravatar...&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;
+  &lt;script type=&quot;text/javascript&quot;&gt;
+    $(function () {
+        var url = &quot;http://www.gravatar.com/{{ .Site.Params.gravatar_hash }}.json?callback=?&quot;;
+        var $box = $(&quot;#gravatar-aside-profile&quot;)
+        var $msg = $box.children().children()
+        var blink = function (a) {
+          a.fadeOut(400).fadeIn(400)
+        };
+        var intervalID = window.setInterval(blink, 1500, $msg)
+        var setupProfile = function (data) {
+          var entry = data.entry[0]
+          $box
+            .empty()
+            .css(&quot;padding-top&quot;, 5)
+            .append($(&quot;&lt;img&gt;&quot;)
+              .attr(&quot;src&quot;, entry.thumbnailUrl)
+              .attr(&quot;alt&quot;, &quot;thumbnail from Gravatar&quot;)
+              .css(&quot;float&quot;, &quot;left&quot;)
+              .css(&quot;margin-right&quot;, 5)
+            )
+            .append($(&quot;&lt;div&gt;&quot;)
+              .css(&quot;padding&quot;, &quot;5px 0px&quot;)
+              .append($(&quot;&lt;h2&gt;&quot;)
+                .css(&quot;margin-bottom&quot;, 5)
+                .append(&quot;&lt;a href='&quot; + entry.profileUrl + &quot;'&gt;&quot; + entry.displayName + &quot;&lt;/a&gt;&quot;)
+              )
+              .append($(&quot;&lt;div&gt;&quot;)
+                .css(&quot;clear&quot;, &quot;both&quot;)
+                .css(&quot;margin&quot;, 0)
+                .css(&quot;font-size&quot;, &quot;90%&quot;)
+                .html(entry.aboutMe.replace(/\n/g, &quot;&lt;br/&gt;&quot;))
+              )
+            )
+        }
+        var clearInterval = function () {
+          window.clearInterval(intervalID)
+        }
+        var updateMessageToError = function () {
+          $msg.stop().fadeOut().text(&quot;profile load failed.&quot;).fadeIn()
+        }
+        jQuery.getJSON(url)
+          .always(clearInterval)
+          .done(setupProfile)
+          .fail(updateMessageToError)
+    })
+  &lt;/script&gt;
+&lt;/section&gt;
+{{ end }}
 </code></pre>
 
-<h3 id="テーマのダウンロード">テーマのダウンロード</h3>
+<h2 id="partials-gravatarの適応">partials/gravatarの適応</h2>
 
-<p>HUGOにはデフォルトのテーマが用意されていないため、自分でテーマを用意する必要があります。
-手っ取り早く<a href="https://themes.gohugo.io">公式サイトのテーマ</a>からダウンロードすることにしました。</p>
+<p>ここまでの設定でgraviatarの表示準備が完了いたしました。実際に表示するには、使用しているテーマファイルの修正が必要になります。</p>
 
-<p>ここでは、<a href="https://themes.gohugo.io/beg/">Beg</a>という<code>Bootstrap3</code>をベースにしたテーマを使用します。
-<code>Installation</code>の手順に乗っ取り、<code>git clone</code>します。</p>
+<p>テーマの表示したい位置に以下の記述を追加します。</p>
 
-<pre><code>$ cd theme
-$ git clone https://github.com/dim0627/hugo_theme_beg.git
-$ cd ..
+<pre><code>{{ partial &quot;gravatar.html&quot; . }}
 </code></pre>
 
-<p>次のコマンドを実行すると、<code>http://localhost:1313/</code>でプレビューできます。</p>
+<p>あとは、プレビューしつつ微調整するだけです。</p>
 
-<pre><code>$ hugo server -t hugo_theme_beg
-</code></pre>
+<hr />
 
-<p>※<code>-t</code>でテーマを指定することができます。</p>
-
-<h3 id="設定ファイル-config-toml-の編集">設定ファイル:<code>config.toml</code>の編集</h3>
-
-<pre><code>-|  baseURL = &quot;http://example.org/&quot;
-+|  baseURL = &quot;http://your.domain.name/&quot;
--|  languageCode = &quot;en-us&quot;
-+|  languageCode = &quot;ja&quot;
--|  title = &quot;My New Hugo Site&quot;
-+|  title = &quot;Your Site Title&quot;
-+|  theme = &quot;hugo_theme_beg&quot;
-</code></pre>
-
-<p><code>baseURL</code>には公開するURLを入力します。日本語で記事を書くので<code>languageCode = &quot;ja&quot;</code>としました。
-<code>theme = &quot;hugo_theme_beg&quot;</code>は先ほどダウンロードした<code>beg</code>をデフォルトのテーマとしています。この設定をすることで、<code>-t</code>オプションを省略できます。</p>
-
-<p>他にも設定できるパラメータはありますが、ここでは最低限の設定だけということにしています。</p>
-
-<h3 id="front-matter-archetypes-post-md-の作成">Front Matter: <code>archetypes/post.md</code>の作成</h3>
-
-<p><code>Front Matter</code>は記事のメタ情報を管理します。すべての投稿は<code>archetypes/default.md</code>が適応されますが、<a href="https://gohugo.io/content-management/sections/">SECTION</a>という単位ごとにテンプレート化することもできます。</p>
-
-<p>ここでは、ブログエントリーのSECTIONを<code>post</code>ととすることを前提に<code>post.md</code>を作成します。</p>
-
-<pre><code>title: &quot;{{ replace .Name &quot;-&quot; &quot; &quot; | title }}&quot;
-date: {{ .Date }}
-description:  &quot;&quot;
-categories: [&quot;&quot;]
-tags: [&quot;&quot;]
-draft: true
-</code></pre>
-
-<p>なおHUGOでは、<code>SECTION</code>(baseURL以下のサブディレクトリ)とジェネレータ内部で管理される<code>categories</code>と<code>tags</code>の要素で記事の属性を管理することができます。その他にもコンテンツのグルーピングする方法がありますが、詳細は<a href="https://gohugo.io/content-management/taxonomies/">Taxonomies</a>ご覧ください。</p>
-
-<h3 id="記事の作成">記事の作成</h3>
-
-<p>記事作成のコマンドは以下のフォーマットになります。</p>
-
-<pre><code>$ hugo new &lt;section name&gt;/&lt;file name&gt;.&lt;file format&gt;
-</code></pre>
-
-<p>先に書いた通り<code>SECTION</code>を<code>post</code>としますので、helloという記事を作成するには以下のコマンドになります。</p>
-
-<pre><code>$ hugo new post/hello.md
-</code></pre>
-
-<p>プレビュー</p>
-
-<pre><code>$ hugo server -D -w
-</code></pre>
-
-<p>※<code>-D</code>はドラフトコンテンツの表示。<code>-w</code>は変更をリアルタイム表示するオプションです。</p>
-
-<h3 id="記事の公開">記事の公開</h3>
-
-<p>記事が作成できたら、<code>draft: true</code>を削除して以下のコマンドを実行します。</p>
-
-<pre><code>$ hugo
-</code></pre>
-
-<p>実行後、<code>public</code>ディレクトリに静的コンテンツが生成されますので、<code>public</code>内のコンテンツをホスティングサービスにデプロイすることで公開されます。</p>
+<p>今回作成したpartialsは折を見て、GitHubで公開する予定でいます。</p>
 
 <p>以上。</p></div>
 
@@ -290,7 +276,7 @@ draft: true
           
           <li><a href="http://blog.eksy.tokyo/tags/hugo/">HUGO</a></li>
           
-          <li><a href="http://blog.eksy.tokyo/tags/%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88/">クイックスタート</a></li>
+          <li><a href="http://blog.eksy.tokyo/tags/gravatar/">Gravatar</a></li>
           
         </ul>
       </div>

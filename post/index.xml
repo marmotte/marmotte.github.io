@@ -6,10 +6,22 @@
     <description>Recent content in Posts on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 01 Mar 2018 20:06:24 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 02 Mar 2018 19:38:37 +0900</lastBuildDate>
     
 	<atom:link href="http://blog.eksy.tokyo/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GravatarのプロフィールをHUGOで表示する</title>
+      <link>http://blog.eksy.tokyo/post/gravatar-on-hugo/</link>
+      <pubDate>Fri, 02 Mar 2018 19:38:37 +0900</pubDate>
+      
+      <guid>http://blog.eksy.tokyo/post/gravatar-on-hugo/</guid>
+      <description>&lt;p&gt;Octopressの頃から&lt;a href=&#34;https://en.gravatar.com/alalwww&#34;&gt;ある(@alalwww)&lt;/a&gt;さんの作成された&lt;code&gt;Gravatar aside in Octopress&lt;/code&gt;を利用して
+&lt;a href=&#34;https://en.gravatar.com&#34;&gt;Gravatar&lt;/a&gt;からプロフィール表示をしていましたが、HUGOでも利用したいと思いポーティングしてみました。&lt;br /&gt;
+と言っても、基本的にはHUGOが利用するGo言語の&lt;a href=&#34;https://golang.org/pkg/html/template/&#34;&gt;テンプレートライブラリ&lt;/a&gt;の記法に置き換えただけです。
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>HUGOで始めるブロガー生活</title>

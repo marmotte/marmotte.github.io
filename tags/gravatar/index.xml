@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on re:inventing the wheel</title>
-    <link>http://blog.eksy.tokyo/tags/hugo/</link>
-    <description>Recent content in Hugo on re:inventing the wheel</description>
+    <title>Gravatar on re:inventing the wheel</title>
+    <link>http://blog.eksy.tokyo/tags/gravatar/</link>
+    <description>Recent content in Gravatar on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 02 Mar 2018 19:38:37 +0900</lastBuildDate>
     
-	<atom:link href="http://blog.eksy.tokyo/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.eksy.tokyo/tags/gravatar/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -21,17 +21,6 @@
 &lt;a href=&#34;https://en.gravatar.com&#34;&gt;Gravatar&lt;/a&gt;からプロフィール表示をしていましたが、HUGOでも利用したいと思いポーティングしてみました。&lt;br /&gt;
 と言っても、基本的にはHUGOが利用するGo言語の&lt;a href=&#34;https://golang.org/pkg/html/template/&#34;&gt;テンプレートライブラリ&lt;/a&gt;の記法に置き換えただけです。
 &lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>HUGOで始めるブロガー生活</title>
-      <link>http://blog.eksy.tokyo/post/starting_hugo/</link>
-      <pubDate>Thu, 01 Mar 2018 20:06:24 +0900</pubDate>
-      
-      <guid>http://blog.eksy.tokyo/post/starting_hugo/</guid>
-      <description>&lt;p&gt;以前、別ドメインで&lt;a href=&#34;http://octopress.org/&#34;&gt;Octopress&lt;/a&gt;+&lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt;でブログを立ち上げていましたが、更新が滞り早数年。
-ドメイン廃止を期に、&lt;a href=&#34;https://gohugo.io/&#34;&gt;HUGO&lt;/a&gt;を使って心機一転ブログを立て直すことにいたしました。&lt;br /&gt;
-自分的にOctopressは、作業PCの入れ替え後に環境構築を怠り放置する結果になってしまったので、インストールが楽なものという事で、、、&lt;/p&gt;</description>
     </item>
     
   </channel>
