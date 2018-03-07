@@ -6,16 +6,70 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="generator" content="Hugo 0.37" />
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/index.xml">
 
-<link rel="canonical" href="http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/">
+
+<link rel="canonical" href="http://blog.eksy.tokyo/post/route53-said-character-string-too-long/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>エンジニアブログ - re:inventing the wheel</title>
+    <title>DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた - re:inventing the wheel</title>
     
+<meta name="description" content="DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた">
+
+<meta property="og:title" content="DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた - re:inventing the wheel">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.eksy.tokyo/post/route53-said-character-string-too-long/">
+<meta property="og:image" content="http://blog.eksy.tokyo/images/default.png">
+<meta property="og:site_name" content="re:inventing the wheel">
+<meta property="og:description" content="DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="re:inventing the wheel">
+<meta name="twitter:url" content="http://blog.eksy.tokyo/post/route53-said-character-string-too-long/">
+<meta name="twitter:title" content="DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた - re:inventing the wheel">
+<meta name="twitter:description" content="DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた">
+<meta name="twitter:image" content="http://blog.eksy.tokyo/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://blog.eksy.tokyo/"
+    },
+    "headline": "DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた - re:inventing the wheel",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://blog.eksy.tokyo/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2018-03-03T17:15:22JST",
+    "dateModified": "2018-03-03T17:15:22JST",
+    "author": {
+      "@type": "Person",
+      "name": "re:inventing the wheel"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "re:inventing the wheel",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://blog.eksy.tokyo/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた"
+  }
+</script>
+
+
     <link href="http://blog.eksy.tokyo/css/styles.css" rel="stylesheet">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -61,91 +115,129 @@ ga('send', 'pageview');
 <div class="row">
   <div class="col-md-8">
 
-    
-    <header class="page-header">
-      <h1>エンジニアブログ</h1>
-    </header>
-    
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://blog.eksy.tokyo/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://blog.eksy.tokyo/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた</li>
+      </ol>
+    </nav>
 
-    <ul class="p-articles">
-      
-      <li><article class="li">
+<div>
+
+
+<div style="padding-top: 5px; padding-right: 5px; float: left">
+<a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-counter" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+</div>
+
+
+<div style="padding-top: 5px; padding-right: 5px; float: left">
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+
+<div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like" data-href="http://blog.eksy.tokyo/post/route53-said-character-string-too-long/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+</div>
+
+</div>
+
+
+    <article class="single">
   <header>
     <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-03T17:15:22JST">Mar 3, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="http://blog.eksy.tokyo/post/route53-said-character-string-too-long/">DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた</a></h2>
+
+    <h1 class="title">DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた</h1>
   </header>
 
   
-  <div class="summary"><p>久しぶりにDKIM用TXTレコードを設定しようとRoute53に追加したら、<code>CharacterStringTooLong (Value is too long) encountered</code>と怒られたのでメモ。</p>
+
+  <div class="article-body"><p>久しぶりにDKIM用TXTレコードを設定しようとRoute53に追加したら、<code>CharacterStringTooLong (Value is too long) encountered</code>と怒られたのでメモ。</p>
 
 <p>冷静に考えれば、2048bitのキーを指定したので「そりゃそうだよね」と言う感じです。
-</p></div>
+</p>
 
-  
-  <footer>
-    <a href="http://blog.eksy.tokyo/post/route53-said-character-string-too-long/" title="DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた">Read More…</a>
+<h2 id="txtレコードの1つの文字列は-最大255文字">TXTレコードの1つの文字列は、最大255文字</h2>
+
+<p>Route53に限らずではありますが、TXTレコードに記述するダブルクオート<code>&quot; &quot;</code>で囲んだ文字列は255文字以内にする必要があります。</p>
+
+<h2 id="実際にどんな感じにするの">実際にどんな感じにするの？</h2>
+
+<p>TXTに以下のような値を設定するとした場合、</p>
+
+<pre><code>v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAraC3pqvqTkAfXhUn7Kn3JUNMwDkZ65ftwXH58anno/bElnTDAd/idk8kWpslrQIMsvVKAe+mvmBEnpXzJL+0LgTNVTQctUujyilWvcONRd/z37I34y6WUIbFn4ytkzkdoVmeTt32f5LxegfYP4P/w7QGN1mOcnE2Qd5SKIZv3Ia1p9d6uCaVGI8brE/7zM5c/zMthVPE2WZKA28+QomQDH7ludLGhXGxpc7kZZCoB5lQiP0o07Ful33fcED73BS9Bt1SNhnrs5v7oq1pIab0LEtHsFHAZmGJDjybPA7OWWaV3L814r/JfU2NK1eNu9xYJwA8YW7WosL45CSkyp4QeQIDAQAB
+</code></pre>
+
+<p>以下のように<code>&quot;&lt;255文字以内&gt;&quot; &quot;&lt;255文字以内&gt;&quot;</code>のように成形して登録します。なお、分割した文字列は<code>半角スペース</code>でつなぎます。</p>
+
+<pre><code>&quot;v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAraC3pqvqTkAfXhUn7Kn3JUNMwDkZ65ftwXH58anno/bElnTDAd/idk8kWpslrQIMsvVKAe+mvmBEnpXzJL+0LgTNVTQctUujyilWvcONRd/z37I34y6WUIbFn4ytkzkdoVmeTt32f5LxegfYP4P/w7QGN1mOcnE2Qd5SKIZv3Ia1p9d6uCaVGI8brE/7zM5c/&quot;&lt;ここが半角スペース&gt;&quot;zMthVPE2WZKA28+QomQDH7ludLGhXGxpc7kZZCoB5lQiP0o07Ful33fcED73BS9Bt1SNhnrs5v7oq1pIab0LEtHsFHAZmGJDjybPA7OWWaV3L814r/JfU2NK1eNu9xYJwA8YW7WosL45CSkyp4QeQIDAQAB&quot;
+</code></pre>
+
+<h2 id="参考">参考</h2>
+
+<ul>
+<li><a href="https://docs.aws.amazon.com/ja_jp/Route53/latest/DeveloperGuide/ResourceRecordTypes.html#TXTFormat">サポートされるDNSレコードタイプ</a></li>
+<li><a href="https://support.google.com/a/answer/173535?hl=ja">DKIMを使用してメールを認証する</a></li>
+</ul>
+
+<p>以上。</p></div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/">エンジニアブログ</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://blog.eksy.tokyo/tags/route53/">Route53</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
   </footer>
-  
+
 </article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-02T19:38:37JST">Mar 2, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://blog.eksy.tokyo/post/gravatar-on-hugo/">GravatarのプロフィールをHUGOで表示する</a></h2>
-  </header>
 
-  
-  <div class="summary"><p>Octopressの頃から<a href="https://en.gravatar.com/alalwww">ある(@alalwww)</a>さんの作成された<code>Gravatar aside in Octopress</code>を利用して
-<a href="https://en.gravatar.com">Gravatar</a>からプロフィール表示をしていましたが、HUGOでも利用したいと思いポーティングしてみました。<br />
-と言っても、基本的にはHUGOが利用するGo言語の<a href="https://golang.org/pkg/html/template/">テンプレートライブラリ</a>の記法に置き換えただけです。
-</p></div>
-
-  
-  <footer>
-    <a href="http://blog.eksy.tokyo/post/gravatar-on-hugo/" title="GravatarのプロフィールをHUGOで表示する">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-01T20:06:24JST">Mar 1, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://blog.eksy.tokyo/post/starting_hugo/">HUGOで始めるブロガー生活</a></h2>
-  </header>
-
-  
-  <div class="summary"><p>以前、別ドメインで<a href="http://octopress.org/">Octopress</a>+<a href="https://pages.github.com/">GitHub Pages</a>でブログを立ち上げていましたが、更新が滞り早数年。
-ドメイン廃止を期に、<a href="https://gohugo.io/">HUGO</a>を使って心機一転ブログを立て直すことにいたしました。<br />
-自分的にOctopressは、作業PCの入れ替え後に環境構築を怠り放置する結果になってしまったので、インストールが楽なものという事で、、、</p></div>
-
-  
-  <footer>
-    <a href="http://blog.eksy.tokyo/post/starting_hugo/" title="HUGOで始めるブロガー生活">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
-    </ul>
 
     
-
-
   </div>
+
   <div class="col-md-4">
     
 <aside class="l-sidebar">

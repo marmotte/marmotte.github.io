@@ -6,10 +6,33 @@
     <description>Recent content on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 02 Mar 2018 19:38:37 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 03 Mar 2018 17:15:22 +0900</lastBuildDate>
     
 	<atom:link href="http://blog.eksy.tokyo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた</title>
+      <link>http://blog.eksy.tokyo/post/route53-said-character-string-too-long/</link>
+      <pubDate>Sat, 03 Mar 2018 17:15:22 +0900</pubDate>
+      
+      <guid>http://blog.eksy.tokyo/post/route53-said-character-string-too-long/</guid>
+      <description>&lt;p&gt;久しぶりにDKIM用TXTレコードを設定しようとRoute53に追加したら、&lt;code&gt;CharacterStringTooLong (Value is too long) encountered&lt;/code&gt;と怒られたのでメモ。&lt;/p&gt;
+
+&lt;p&gt;冷静に考えれば、2048bitのキーを指定したので「そりゃそうだよね」と言う感じです。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>サイト: 「jpEra - 今年は和暦で？」 を作ってみました</title>
+      <link>http://blog.eksy.tokyo/topic/jpera/</link>
+      <pubDate>Sat, 03 Mar 2018 10:07:39 +0900</pubDate>
+      
+      <guid>http://blog.eksy.tokyo/topic/jpera/</guid>
+      <description>&lt;p&gt;トピックと言う程のものではありませんが、「&lt;a href=&#34;http://jpera.eksy.tokyo/&#34;&gt;jpEra - 今年は和暦で？&lt;/a&gt;」を勉強がてら作ってみました。
+最近西暦表記メインで年に数回使うか使わないかの年号表記を毎度調べるのもめんどくさいなということで、、、
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>GravatarのプロフィールをHUGOで表示する</title>

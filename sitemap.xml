@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.eksy.tokyo/post/route53-said-character-string-too-long/</loc>
+    <lastmod>2018-03-03T17:15:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://blog.eksy.tokyo/topic/jpera/</loc>
+    <lastmod>2018-03-03T10:07:39+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.eksy.tokyo/post/gravatar-on-hugo/</loc>
     <lastmod>2018-03-02T19:38:37+09:00</lastmod>
   </url>
@@ -31,7 +41,13 @@
   
   <url>
     <loc>http://blog.eksy.tokyo/post/</loc>
-    <lastmod>2018-03-02T19:38:37+09:00</lastmod>
+    <lastmod>2018-03-03T17:15:22+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.eksy.tokyo/tags/route53/</loc>
+    <lastmod>2018-03-03T17:15:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -42,20 +58,32 @@
   </url>
   
   <url>
+    <loc>http://blog.eksy.tokyo/topic/</loc>
+    <lastmod>2018-03-03T10:07:39+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://blog.eksy.tokyo/</loc>
-    <lastmod>2018-03-02T19:38:37+09:00</lastmod>
+    <lastmod>2018-03-03T17:15:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/</loc>
-    <lastmod>2018-03-02T19:38:37+09:00</lastmod>
+    <lastmod>2018-03-03T17:15:22+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.eksy.tokyo/tags/%E3%82%AF%E3%82%A4%E3%83%83%E3%82%AF%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88/</loc>
     <lastmod>2018-03-01T20:06:24+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.eksy.tokyo/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF%E3%82%B9/</loc>
+    <lastmod>2018-03-03T10:07:39+09:00</lastmod>
     <priority>0</priority>
   </url>
   

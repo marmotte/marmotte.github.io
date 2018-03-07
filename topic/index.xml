@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Topics on re:inventing the wheel</title>
+    <link>http://blog.eksy.tokyo/topic/</link>
+    <description>Recent content in Topics on re:inventing the wheel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 03 Mar 2018 10:07:39 +0900</lastBuildDate>
+    
+	<atom:link href="http://blog.eksy.tokyo/topic/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>サイト: 「jpEra - 今年は和暦で？」 を作ってみました</title>
+      <link>http://blog.eksy.tokyo/topic/jpera/</link>
+      <pubDate>Sat, 03 Mar 2018 10:07:39 +0900</pubDate>
+      
+      <guid>http://blog.eksy.tokyo/topic/jpera/</guid>
+      <description>&lt;p&gt;トピックと言う程のものではありませんが、「&lt;a href=&#34;http://jpera.eksy.tokyo/&#34;&gt;jpEra - 今年は和暦で？&lt;/a&gt;」を勉強がてら作ってみました。
+最近西暦表記メインで年に数回使うか使わないかの年号表記を毎度調べるのもめんどくさいなということで、、、
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

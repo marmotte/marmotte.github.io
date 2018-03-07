@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Route53 on re:inventing the wheel</title>
+    <link>http://blog.eksy.tokyo/tags/route53/</link>
+    <description>Recent content in Route53 on re:inventing the wheel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sat, 03 Mar 2018 17:15:22 +0900</lastBuildDate>
+    
+	<atom:link href="http://blog.eksy.tokyo/tags/route53/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた</title>
+      <link>http://blog.eksy.tokyo/post/route53-said-character-string-too-long/</link>
+      <pubDate>Sat, 03 Mar 2018 17:15:22 +0900</pubDate>
+      
+      <guid>http://blog.eksy.tokyo/post/route53-said-character-string-too-long/</guid>
+      <description>&lt;p&gt;久しぶりにDKIM用TXTレコードを設定しようとRoute53に追加したら、&lt;code&gt;CharacterStringTooLong (Value is too long) encountered&lt;/code&gt;と怒られたのでメモ。&lt;/p&gt;
+
+&lt;p&gt;冷静に考えれば、2048bitのキーを指定したので「そりゃそうだよね」と言う感じです。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
