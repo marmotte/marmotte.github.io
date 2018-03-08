@@ -6,10 +6,21 @@
     <description>Recent content in Posts on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 03 Mar 2018 17:15:22 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 04 Mar 2018 10:29:53 +0900</lastBuildDate>
     
 	<atom:link href="http://blog.eksy.tokyo/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>pyenvインストール後に brew doctor を実行するとWarningが出るのでその対処</title>
+      <link>http://blog.eksy.tokyo/post/after-installing-pyenv-brew-doctor-issued-warning/</link>
+      <pubDate>Sun, 04 Mar 2018 10:29:53 +0900</pubDate>
+      
+      <guid>http://blog.eksy.tokyo/post/after-installing-pyenv-brew-doctor-issued-warning/</guid>
+      <description>&lt;p&gt;pyenvをインストールすると&lt;code&gt;brew doctor&lt;/code&gt;実行時に以下のような &lt;em&gt;Warning&lt;/em&gt; が表示されてしまいます。
+環境構築の都度、対処方法を検索している自分のためのメモ。
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた</title>

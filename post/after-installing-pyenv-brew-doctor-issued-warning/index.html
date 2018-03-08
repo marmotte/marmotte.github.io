@@ -6,16 +6,70 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="generator" content="Hugo 0.37.1" />
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/index.xml">
 
-<link rel="canonical" href="http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/">
+
+<link rel="canonical" href="http://blog.eksy.tokyo/post/after-installing-pyenv-brew-doctor-issued-warning/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>エンジニアブログ - re:inventing the wheel</title>
+    <title>pyenvインストール後に brew doctor を実行するとWarningが出るのでその対処 - re:inventing the wheel</title>
     
+<meta name="description" content="pyenvインストール後に brew doctor を実行するとWarningが出るのでその対処">
+
+<meta property="og:title" content="pyenvインストール後に brew doctor を実行するとWarningが出るのでその対処 - re:inventing the wheel">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.eksy.tokyo/post/after-installing-pyenv-brew-doctor-issued-warning/">
+<meta property="og:image" content="http://blog.eksy.tokyo/images/default.png">
+<meta property="og:site_name" content="re:inventing the wheel">
+<meta property="og:description" content="pyenvインストール後に brew doctor を実行するとWarningが出るのでその対処">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="re:inventing the wheel">
+<meta name="twitter:url" content="http://blog.eksy.tokyo/post/after-installing-pyenv-brew-doctor-issued-warning/">
+<meta name="twitter:title" content="pyenvインストール後に brew doctor を実行するとWarningが出るのでその対処 - re:inventing the wheel">
+<meta name="twitter:description" content="pyenvインストール後に brew doctor を実行するとWarningが出るのでその対処">
+<meta name="twitter:image" content="http://blog.eksy.tokyo/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://blog.eksy.tokyo/"
+    },
+    "headline": "pyenvインストール後に brew doctor を実行するとWarningが出るのでその対処 - re:inventing the wheel",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://blog.eksy.tokyo/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2018-03-04T10:29:53JST",
+    "dateModified": "2018-03-04T10:29:53JST",
+    "author": {
+      "@type": "Person",
+      "name": "re:inventing the wheel"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "re:inventing the wheel",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://blog.eksy.tokyo/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "pyenvインストール後に brew doctor を実行するとWarningが出るのでその対処"
+  }
+</script>
+
+
     <link href="http://blog.eksy.tokyo/css/styles.css" rel="stylesheet">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -61,114 +115,144 @@ ga('send', 'pageview');
 <div class="row">
   <div class="col-md-8">
 
-    
-    <header class="page-header">
-      <h1>エンジニアブログ</h1>
-    </header>
-    
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://blog.eksy.tokyo/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://blog.eksy.tokyo/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">pyenvインストール後に brew doctor を実行するとWarningが出るのでその対処</li>
+      </ol>
+    </nav>
 
-    <ul class="p-articles">
-      
-      <li><article class="li">
+<div>
+
+
+<div style="padding-top: 5px; padding-right: 5px; float: left">
+<a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-counter" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+</div>
+
+
+<div style="padding-top: 5px; padding-right: 5px; float: left">
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+
+
+<div>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.12';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="fb-like" data-href="http://blog.eksy.tokyo/post/after-installing-pyenv-brew-doctor-issued-warning/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+</div>
+
+</div>
+
+
+    <article class="single">
   <header>
     <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-04T10:29:53JST">Mar 4, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="http://blog.eksy.tokyo/post/after-installing-pyenv-brew-doctor-issued-warning/">pyenvインストール後に brew doctor を実行するとWarningが出るのでその対処</a></h2>
+
+    <h1 class="title">pyenvインストール後に brew doctor を実行するとWarningが出るのでその対処</h1>
   </header>
 
   
-  <div class="summary"><p>pyenvをインストールすると<code>brew doctor</code>実行時に以下のような <em>Warning</em> が表示されてしまいます。
+
+  <div class="article-body"><p>pyenvをインストールすると<code>brew doctor</code>実行時に以下のような <em>Warning</em> が表示されてしまいます。
 環境構築の都度、対処方法を検索している自分のためのメモ。
-</p></div>
+</p>
 
-  
-  <footer>
-    <a href="http://blog.eksy.tokyo/post/after-installing-pyenv-brew-doctor-issued-warning/" title="pyenvインストール後に brew doctor を実行するとWarningが出るのでその対処">Read More…</a>
+<h2 id="参照資料">参照資料</h2>
+
+<ul>
+<li><a href="https://qiita.com/takuya0301/items/695f42f6904e979f0152">pyenvをインストールしてるとbrew doctorで出るWarningを消す方法</a></li>
+<li><a href="http://www.task-notes.com/entry/20141223/1419324649">【Homebrew】brew doctorのWarning対処方法 (その3) + envコマンドについて</a></li>
+</ul>
+
+<h2 id="warningの内容">Warningの内容</h2>
+
+<pre><code>$ brew doctor
+Please note that these warnings are just used to help the Homebrew maintainers
+with debugging if you file an issue. If everything you use Homebrew for is
+working fine: please don't worry or file an issue; just ignore this. Thanks!
+
+Warning: &quot;config&quot; scripts exist outside your system or Homebrew directories.
+`./configure` scripts often look for *-config scripts to determine if
+software packages are installed, and what additional flags to use when
+compiling and linking.
+
+Having additional scripts in your path can confuse software installed via
+Homebrew if the config script overrides a system or Homebrew provided
+script of the same name. We found the following &quot;config&quot; scripts:
+  /Users/yosuke/.pyenv/shims/python-config
+  /Users/yosuke/.pyenv/shims/python2-config
+  /Users/yosuke/.pyenv/shims/python2.7-config
+</code></pre>
+
+<h2 id="対処">対処</h2>
+
+<p><code>~/bash_profile</code>などに以下の設定を記述します。</p>
+
+<pre><code>alias brew='PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin brew'
+</code></pre>
+
+<p>参考にしたサイトにも書かれていますが、PATHにpyenvのディレクトリ含まれてしまっているのが原因です。
+<code>brew</code>コマンド実行時だけ<code>PATH</code>を明示的に指定すれば解決できます。</p>
+
+<p>以上</p></div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/">エンジニアブログ</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://blog.eksy.tokyo/tags/macos/">macOS</a></li>
+          
+          <li><a href="http://blog.eksy.tokyo/tags/homebrew/">homebrew</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
   </footer>
-  
+
 </article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-03T17:15:22JST">Mar 3, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://blog.eksy.tokyo/post/route53-said-character-string-too-long/">DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた</a></h2>
-  </header>
 
-  
-  <div class="summary"><p>久しぶりにDKIM用TXTレコードを設定しようとRoute53に追加したら、<code>CharacterStringTooLong (Value is too long) encountered</code>と怒られたのでメモ。</p>
-
-<p>冷静に考えれば、2048bitのキーを指定したので「そりゃそうだよね」と言う感じです。
-</p></div>
-
-  
-  <footer>
-    <a href="http://blog.eksy.tokyo/post/route53-said-character-string-too-long/" title="DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-02T19:38:37JST">Mar 2, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://blog.eksy.tokyo/post/gravatar-on-hugo/">GravatarのプロフィールをHUGOで表示する</a></h2>
-  </header>
-
-  
-  <div class="summary"><p>Octopressの頃から<a href="https://en.gravatar.com/alalwww">ある(@alalwww)</a>さんの作成された<code>Gravatar aside in Octopress</code>を利用して
-<a href="https://en.gravatar.com">Gravatar</a>からプロフィール表示をしていましたが、HUGOでも利用したいと思いポーティングしてみました。<br />
-と言っても、基本的にはHUGOが利用するGo言語の<a href="https://golang.org/pkg/html/template/">テンプレートライブラリ</a>の記法に置き換えただけです。
-</p></div>
-
-  
-  <footer>
-    <a href="http://blog.eksy.tokyo/post/gravatar-on-hugo/" title="GravatarのプロフィールをHUGOで表示する">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-01T20:06:24JST">Mar 1, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://blog.eksy.tokyo/post/starting_hugo/">HUGOで始めるブロガー生活</a></h2>
-  </header>
-
-  
-  <div class="summary"><p>以前、別ドメインで<a href="http://octopress.org/">Octopress</a>+<a href="https://pages.github.com/">GitHub Pages</a>でブログを立ち上げていましたが、更新が滞り早数年。
-ドメイン廃止を期に、<a href="https://gohugo.io/">HUGO</a>を使って心機一転ブログを立て直すことにいたしました。<br />
-自分的にOctopressは、作業PCの入れ替え後に環境構築を怠り放置する結果になってしまったので、インストールが楽なものという事で、、、</p></div>
-
-  
-  <footer>
-    <a href="http://blog.eksy.tokyo/post/starting_hugo/" title="HUGOで始めるブロガー生活">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
-    </ul>
 
     
-
-
   </div>
+
   <div class="col-md-4">
     
 <aside class="l-sidebar">
