@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="pinterest" content="nopin">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="generator" content="Hugo 0.37.1" />
+<meta name="generator" content="Hugo 0.37" />
 
 
 
@@ -73,6 +73,30 @@
     <link href="http://blog.eksy.tokyo/css/styles.css" rel="stylesheet">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <style type="text/css">
+    .sns{
+      text-align: left;
+    }
+
+    .sns > li {
+      display: inline-block;
+      line-height: 0;
+      vertical-align: top;
+    }
+
+    .sns > li:first-child {
+      margin-left: 0;
+    }
+
+    .sns > li:last-child {
+      margin-right: 0;
+    }
+
+    .sns iframe {
+      margin: 0 !important;
+    }
+    </style>
   </head>
 
   <body>
@@ -126,31 +150,25 @@ ga('send', 'pageview');
     </nav>
 
 <div>
-
-
-<div style="padding-top: 5px; padding-right: 5px; float: left">
-<a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-counter" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-</div>
-
-
-<div style="padding-top: 5px; padding-right: 5px; float: left">
-<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
-
-
-<div>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.12';
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<div class="fb-like" data-href="http://blog.eksy.tokyo/post/after-installing-pyenv-brew-doctor-issued-warning/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-</div>
-
+  <ul class="sns">
+    <li>
+      <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-counter" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </li>
+    <li>
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </li>
+    <li>
+      <div id="fb-root" style="display: none"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.12';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <div class="fb-like" data-href="http://blog.eksy.tokyo/post/after-installing-pyenv-brew-doctor-issued-warning/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    </li>
+  </ul>
 </div>
 
 
@@ -267,51 +285,51 @@ script of the same name. We found the following &quot;config&quot; scripts:
   </div>
   <div style="clear:both"></div>
   <script type="text/javascript">
-      $(function () {
-          var url = "http://www.gravatar.com/cdd605858f695128532412f701153985.json?callback=?";
-          var $box = $("#gravatar-aside-profile")
-          var $msg = $box.children().children()
-          var blink = function (a) {
-            a.fadeOut(400).fadeIn(400)
-          };
-          var intervalID = window.setInterval(blink, 1500, $msg)
-          var setupProfile = function (data) {
-            var entry = data.entry[0]
-            $box
-              .empty()
-              .css("padding", 12)
-              .append($("<img>")
-                .attr("src", entry.thumbnailUrl)
-                .attr("alt", "thumbnail from Gravatar")
-                .css("float", "left")
-                .css("margin-right", 5)
-              )
-              .append($("<div>")
-                .css("padding", "5px 0px")
-                .append($("<h2>")
-                  .css("margin-bottom", 5)
-                  .append("<a href='" + entry.profileUrl + "'>" + entry.displayName + "</a>")
-                )
-                .append($("<div>")
-                  .css("clear", "both")
-                  .css("margin", 0)
-                  .css("font-size", "90%")
-                  .html(entry.aboutMe.replace(/\n/g, "<br/>"))
-                )
-              )
-          }
-          var clearInterval = function () {
-            window.clearInterval(intervalID)
-          }
-          var updateMessageToError = function () {
-            $msg.stop().fadeOut().text("profile load failed.").fadeIn()
-          }
-          jQuery.getJSON(url)
-            .always(clearInterval)
-            .done(setupProfile)
-            .fail(updateMessageToError)
-      })
-  </script>
+  $(function () {
+    var url = "http://www.gravatar.com/cdd605858f695128532412f701153985.json?callback=?";
+    var $box = $("#gravatar-aside-profile")
+    var $msg = $box.children().children()
+    var blink = function (a) {
+      a.fadeOut(400).fadeIn(400)
+    };
+    var intervalID = window.setInterval(blink, 1500, $msg)
+    var setupProfile = function (data) {
+      var entry = data.entry[0]
+      $box
+      .empty()
+      .css("padding", 12)
+      .append($("<img>")
+      .attr("src", entry.thumbnailUrl)
+      .attr("alt", "thumbnail from Gravatar")
+      .css("float", "left")
+      .css("margin-right", 5)
+    )
+    .append($("<div>")
+    .css("padding", "5px 0px")
+    .append($("<h2>")
+    .css("margin-bottom", 5)
+    .append("<a href='" + entry.profileUrl + "'>" + entry.displayName + "</a>")
+  )
+  .append($("<div>")
+  .css("clear", "both")
+  .css("margin", 0)
+  .css("font-size", "90%")
+  .html(entry.aboutMe.replace(/\n/g, "<br/>"))
+)
+)
+}
+var clearInterval = function () {
+  window.clearInterval(intervalID)
+}
+var updateMessageToError = function () {
+  $msg.stop().fadeOut().text("profile load failed.").fadeIn()
+}
+jQuery.getJSON(url)
+.always(clearInterval)
+.done(setupProfile)
+.fail(updateMessageToError)
+})
+</script>
 </section>
 
 
@@ -418,4 +436,3 @@ script of the same name. We found the following &quot;config&quot; scripts:
     <script>hljs.initHighlightingOnLoad();</script>
   </body>
 </html>
-
