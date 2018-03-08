@@ -6,10 +6,24 @@
     <description>Recent content on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 04 Mar 2018 10:29:53 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 06 Mar 2018 21:11:58 +0900</lastBuildDate>
     
 	<atom:link href="http://blog.eksy.tokyo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MacOSX上でISOファイルからインストールUSBディスクを作る</title>
+      <link>http://blog.eksy.tokyo/post/create-bootable-usb-from-iso-file/</link>
+      <pubDate>Tue, 06 Mar 2018 21:11:58 +0900</pubDate>
+      
+      <guid>http://blog.eksy.tokyo/post/create-bootable-usb-from-iso-file/</guid>
+      <description>&lt;p&gt;久しぶりにCentOSを物理マシンにインストールしようと思ったので、BootableUSBを作成しました。
+毎度「macOS(今回はHigh Sierra)でどう作るんだっけ？」とググる自分に嫌気を覚えたのでメモ。&lt;/p&gt;
+
+&lt;p&gt;書き込みにはddコマンドを利用しますが、&lt;code&gt;/dev/rdiskX&lt;/code&gt;と&lt;code&gt;/dev/diskX&lt;/code&gt;の速度比較を行った結果、
+やはり&lt;code&gt;/dev/rdiskX&lt;/code&gt;に軍配が上がりました。
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>pyenvインストール後に brew doctor を実行するとWarningが出るのでその対処</title>
