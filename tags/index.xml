@@ -6,10 +6,19 @@
     <description>Recent content in Tags on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 02 Mar 2018 19:38:37 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 09 Mar 2018 20:48:18 +0900</lastBuildDate>
     
 	<atom:link href="http://blog.eksy.tokyo/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Docker</title>
+      <link>http://blog.eksy.tokyo/tags/docker/</link>
+      <pubDate>Fri, 09 Mar 2018 20:48:18 +0900</pubDate>
+      
+      <guid>http://blog.eksy.tokyo/tags/docker/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Gravatar</title>
@@ -32,7 +41,7 @@
     <item>
       <title>Hugo</title>
       <link>http://blog.eksy.tokyo/tags/hugo/</link>
-      <pubDate>Fri, 02 Mar 2018 19:38:37 +0900</pubDate>
+      <pubDate>Fri, 09 Mar 2018 20:48:18 +0900</pubDate>
       
       <guid>http://blog.eksy.tokyo/tags/hugo/</guid>
       <description></description>

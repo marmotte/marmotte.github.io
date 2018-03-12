@@ -6,10 +6,20 @@
     <description>Recent content in Posts on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 06 Mar 2018 21:11:58 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 09 Mar 2018 20:48:18 +0900</lastBuildDate>
     
 	<atom:link href="http://blog.eksy.tokyo/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>HUGOで生成したサイトをdocker buildしてみた</title>
+      <link>http://blog.eksy.tokyo/post/tried_docker_build_of_hugo_generated_site/</link>
+      <pubDate>Fri, 09 Mar 2018 20:48:18 +0900</pubDate>
+      
+      <guid>http://blog.eksy.tokyo/post/tried_docker_build_of_hugo_generated_site/</guid>
+      <description>&lt;p&gt;今回のエントリーは、物は試しで的なモノです。正直「だからどうした？」という内容なんですが(苦笑)
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>MacOSX上でISOファイルからインストールUSBディスクを作る</title>
@@ -17,7 +27,7 @@
       <pubDate>Tue, 06 Mar 2018 21:11:58 +0900</pubDate>
       
       <guid>http://blog.eksy.tokyo/post/create-bootable-usb-from-iso-file/</guid>
-      <description>&lt;p&gt;久しぶりにCentOSを物理マシンにインストールしようと思ったので、BootableUSBを作成しました。
+      <description>&lt;p&gt;ブータブルUSBの作成手順。&lt;br /&gt;
 毎度「macOS(今回はHigh Sierra)でどう作るんだっけ？」とググる自分に嫌気を覚えたのでメモ。&lt;/p&gt;
 
 &lt;p&gt;書き込みにはddコマンドを利用しますが、&lt;code&gt;/dev/rdiskX&lt;/code&gt;と&lt;code&gt;/dev/diskX&lt;/code&gt;の速度比較を行った結果、
