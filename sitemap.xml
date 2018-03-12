@@ -3,11 +3,14 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+<<<<<<< HEAD
     <loc>http://blog.eksy.tokyo/post/terminal-on-atom/</loc>
     <lastmod>2018-03-12T22:23:42+09:00</lastmod>
   </url>
   
   <url>
+=======
+>>>>>>> b54f85fe0b7fdac2920ae2a4787a88e23e3cb685
     <loc>http://blog.eksy.tokyo/post/tried_docker_build_of_hugo_generated_site/</loc>
     <lastmod>2018-03-09T20:48:18+09:00</lastmod>
   </url>
@@ -85,7 +88,11 @@
   
   <url>
     <loc>http://blog.eksy.tokyo/post/</loc>
+<<<<<<< HEAD
     <lastmod>2018-03-12T22:23:42+09:00</lastmod>
+=======
+    <lastmod>2018-03-09T20:48:18+09:00</lastmod>
+>>>>>>> b54f85fe0b7fdac2920ae2a4787a88e23e3cb685
     <priority>0</priority>
   </url>
   
@@ -97,7 +104,11 @@
   
   <url>
     <loc>http://blog.eksy.tokyo/tags/</loc>
+<<<<<<< HEAD
     <lastmod>2018-03-12T22:23:42+09:00</lastmod>
+=======
+    <lastmod>2018-03-09T20:48:18+09:00</lastmod>
+>>>>>>> b54f85fe0b7fdac2920ae2a4787a88e23e3cb685
     <priority>0</priority>
   </url>
   
@@ -109,13 +120,21 @@
   
   <url>
     <loc>http://blog.eksy.tokyo/</loc>
+<<<<<<< HEAD
     <lastmod>2018-03-12T22:23:42+09:00</lastmod>
+=======
+    <lastmod>2018-03-09T20:48:18+09:00</lastmod>
+>>>>>>> b54f85fe0b7fdac2920ae2a4787a88e23e3cb685
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/</loc>
+<<<<<<< HEAD
     <lastmod>2018-03-12T22:23:42+09:00</lastmod>
+=======
+    <lastmod>2018-03-09T20:48:18+09:00</lastmod>
+>>>>>>> b54f85fe0b7fdac2920ae2a4787a88e23e3cb685
     <priority>0</priority>
   </url>
   
