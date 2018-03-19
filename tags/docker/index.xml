@@ -13,10 +13,10 @@
     
     <item>
       <title>HUGOで生成したサイトをdocker buildしてみた</title>
-      <link>http://blog.eksy.tokyo/post/tried_docker_build_of_hugo_generated_site/</link>
+      <link>http://blog.eksy.tokyo/post/tried-docker-build-of-hugo-generated-site/</link>
       <pubDate>Fri, 09 Mar 2018 20:48:18 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/tried_docker_build_of_hugo_generated_site/</guid>
+      <guid>http://blog.eksy.tokyo/post/tried-docker-build-of-hugo-generated-site/</guid>
       <description>&lt;p&gt;今回のエントリーは、物は試しで的なモノです。正直「だからどうした？」という内容なんですが(苦笑)
 &lt;/p&gt;</description>
     </item>
