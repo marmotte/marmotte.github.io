@@ -6,10 +6,21 @@
     <description>Recent content in Posts on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 18 Mar 2018 12:20:52 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 21 Mar 2018 20:20:12 +0900</lastBuildDate>
     
 	<atom:link href="http://blog.eksy.tokyo/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>W3C Markup Validation Serviceが面白い</title>
+      <link>http://blog.eksy.tokyo/post/interesting-service-w3c-markup-validation/</link>
+      <pubDate>Wed, 21 Mar 2018 20:20:12 +0900</pubDate>
+      
+      <guid>http://blog.eksy.tokyo/post/interesting-service-w3c-markup-validation/</guid>
+      <description>&lt;p&gt;ちょっとした管理ツールでも、WebUIを利用するならW3Cに則ってマークアップしてみたいと思いませんか？
+ネットを漁っていたら&lt;a href=&#34;https://validator.w3.org&#34;&gt;W3C Markup Validation Service&lt;/a&gt;なるサービスを発見したのでご紹介(というか自分へのブクマ)。
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>ドメイン廃止のためにリダイレクトサイトを作ってみた</title>
