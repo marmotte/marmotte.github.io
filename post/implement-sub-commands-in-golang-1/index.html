@@ -8,29 +8,29 @@
 
 
 
-<link rel="canonical" href="http://blog.eksy.tokyo/post/gravatar-on-hugo/">
+<link rel="canonical" href="http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>GravatarのプロフィールをHUGOで表示する - re:inventing the wheel</title>
+    <title>GO言語でサブコマンド付きCLIアプリを作ってみる(1) - re:inventing the wheel</title>
     
-<meta name="description" content="GravatarのプロフィールをHUGOで表示する">
+<meta name="description" content="GO言語でサブコマンド付きCLIアプリを作ってみる(1)">
 
-<meta property="og:title" content="GravatarのプロフィールをHUGOで表示する - re:inventing the wheel">
+<meta property="og:title" content="GO言語でサブコマンド付きCLIアプリを作ってみる(1) - re:inventing the wheel">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://blog.eksy.tokyo/post/gravatar-on-hugo/">
+<meta property="og:url" content="http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/">
 <meta property="og:image" content="http://blog.eksy.tokyo/images/default.png">
 <meta property="og:site_name" content="re:inventing the wheel">
-<meta property="og:description" content="GravatarのプロフィールをHUGOで表示する">
+<meta property="og:description" content="GO言語でサブコマンド付きCLIアプリを作ってみる(1)">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="re:inventing the wheel">
-<meta name="twitter:url" content="http://blog.eksy.tokyo/post/gravatar-on-hugo/">
-<meta name="twitter:title" content="GravatarのプロフィールをHUGOで表示する - re:inventing the wheel">
-<meta name="twitter:description" content="GravatarのプロフィールをHUGOで表示する">
+<meta name="twitter:url" content="http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/">
+<meta name="twitter:title" content="GO言語でサブコマンド付きCLIアプリを作ってみる(1) - re:inventing the wheel">
+<meta name="twitter:description" content="GO言語でサブコマンド付きCLIアプリを作ってみる(1)">
 <meta name="twitter:image" content="http://blog.eksy.tokyo/images/default.png">
 
 
@@ -42,15 +42,15 @@
       "@type": "WebPage",
       "@id":"http://blog.eksy.tokyo/"
     },
-    "headline": "GravatarのプロフィールをHUGOで表示する - re:inventing the wheel",
+    "headline": "GO言語でサブコマンド付きCLIアプリを作ってみる(1) - re:inventing the wheel",
     "image": {
       "@type": "ImageObject",
       "url": "http://blog.eksy.tokyo/images/default.png",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2018-03-02T19:38:37JST",
-    "dateModified": "2018-03-02T19:38:37JST",
+    "datePublished": "2018-03-28T18:58:31JST",
+    "dateModified": "2018-03-28T18:58:31JST",
     "author": {
       "@type": "Person",
       "name": "re:inventing the wheel"
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": "GravatarのプロフィールをHUGOで表示する"
+    "description": "GO言語でサブコマンド付きCLIアプリを作ってみる(1)"
   }
 </script>
 
@@ -145,7 +145,7 @@ ga('send', 'pageview');
         
         <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://blog.eksy.tokyo/post/" itemprop="url"><span itemprop="title">post</span></a></li>
         
-        <li class="active">GravatarのプロフィールをHUGOで表示する</li>
+        <li class="active">GO言語でサブコマンド付きCLIアプリを作ってみる(1)</li>
       </ol>
     </nav>
 
@@ -166,7 +166,7 @@ ga('send', 'pageview');
         js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.12';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
-      <div class="fb-like" data-href="http://blog.eksy.tokyo/post/gravatar-on-hugo/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+      <div class="fb-like" data-href="http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
     </li>
   </ul>
 </div>
@@ -175,123 +175,168 @@ ga('send', 'pageview');
     <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-02T19:38:37JST">Mar 2, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-28T18:58:31JST">Mar 28, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
       
     </ul>
 
-    <h1 class="title">GravatarのプロフィールをHUGOで表示する</h1>
+    <h1 class="title">GO言語でサブコマンド付きCLIアプリを作ってみる(1)</h1>
   </header>
 
   
 
-  <div class="article-body"><p>Octopressの頃から<a href="https://en.gravatar.com/alalwww">ある(@alalwww)</a>さんの作成された<code>Gravatar aside in Octopress</code>を利用して
-<a href="https://en.gravatar.com">Gravatar</a>からプロフィール表示をしていましたが、HUGOでも利用したいと思いポーティングしてみました。<br />
-と言っても、基本的にはHUGOが利用するGo言語の<a href="https://golang.org/pkg/html/template/">テンプレートライブラリ</a>の記法に置き換えただけです。
+  <div class="article-body"><p>API叩いて云々するようなアプリを作りたいと思うと、やっぱりサブコマンドを実装したCLIツールを
+自作したいと思うのはエンジニアの嵯峨ですよね？w<br />
+いろいろと調べていたら<a href="https://github.com/mitchellh/cli">mitchellh/cli</a>(以下cliパッケージ)という&rdquo;Go CLI Library&rdquo;を発見したので触ってみました。
+このcliパッケージですが、Packer・Serf・Consul・Vault・Terraform・Nomadなどで使用されているそうです。
 </p>
 
-<h2 id="gravatar-aside-in-octopress関連のページ">Gravatar aside in Octopress関連のページ</h2>
+<h2 id="使い方">使い方</h2>
+
+<h3 id="ライブラリのインストール">ライブラリのインストール</h3>
+
+<pre><code>$ go get github.com/mitchellh/cli
+</code></pre>
+
+<h3 id="書き方">書き方</h3>
+
+<p>cliパッケージには<code>type Command interface {}</code>というインターフェースが用意されており、
+<code>Help() string</code>・<code>Run(args []string) int</code>・<code>Synopsis() string</code>のメソッドを
+実装することで簡単に使用できます。</p>
+
+<p>とりあえず、ここでは<code>isay</code>という名前で以下のようなアプリを作成します。</p>
+
+<pre><code>$ ./isay --help
+Usage: isay [--version] [--help] &lt;command&gt; [&lt;args&gt;]
+
+Available commands are:
+    goodbye    Say Hello.
+    hello      Say Goodbye.
+</code></pre>
+
+<h3 id="実装編">実装編</h3>
+
+<p>とりあえず、<code>main.go</code>という名前で以下のコードを記述してみます。</p>
+
+<pre><code>package main
+
+import (
+	&quot;github.com/mitchellh/cli&quot;
+	&quot;os&quot;
+	&quot;fmt&quot;
+)
+
+// helloサブコマンドの実装
+type HelloCommand struct {}
+func (c *HelloCommand) Run(args []string) int {
+	fmt.Println(&quot;You say Hello, I say Goodbye.&quot;)
+	return 0
+}
+func (c *HelloCommand) Synopsis() string {
+	return &quot;Say Goodbye.&quot;
+}
+func (c *HelloCommand) Help() string {
+	return &quot;Usage: isay hello&quot;
+}
+
+// goodbye サブコマンドの実装
+type GoodbyeCommand struct {}
+func (c *GoodbyeCommand) Run(args []string) int {
+	fmt.Println(&quot;You say Goodbye, I say Hello.&quot;)
+	return 0
+}
+func (c *GoodbyeCommand) Synopsis() string {
+	return &quot;Say Hello.&quot;
+}
+func (c *GoodbyeCommand) Help() string {
+	return &quot;Usage: isay goodbye&quot;
+}
+
+func main() {
+	// コマンド(アプリ)名とバージョン定義
+	c := cli.NewCLI(&quot;isay&quot;, &quot;0.0.1&quot;)
+
+	// サブコマンドの名前と実装の関連付け
+	c.Args = os.Args[1:]
+	c.Commands = map[string]cli.CommandFactory{
+		&quot;hello&quot;: func() (cli.Command, error) {
+			return &amp;HelloCommand{}, nil
+		},
+		&quot;goodbye&quot;: func() (cli.Command, error) {
+			return &amp;GoodbyeCommand{}, nil
+		},
+	}
+
+	// サブコマンドの実行と終了処理
+	exitStatus, err := c.Run()
+	if err != nil {
+		fmt.Println(err)
+	}
+	os.Exit(exitStatus)
+}
+</code></pre>
+
+<p>ビルド</p>
+
+<pre><code>$ go build -o isay main.go
+</code></pre>
+
+<h3 id="動作確認と解説">動作確認と解説</h3>
+
+<p>とりあえず、実行してみましょう。</p>
+
+<pre><code>$ ./isay hello
+You say Hello, I say Goodbye.
+
+$ ./isay goodbye
+You say Goodbye, I say Hello.
+</code></pre>
+
+<p><code>func Run(args []string) int {}</code>で実装した結果が表示されましたね。</p>
+
+<p>続いて、何も指定せず実行してみます。</p>
+
+<pre><code>$ ./isay
+</code></pre>
+
+<p>するとUsageが表示されます。なお<code>./isay --help</code>も同様の出力を得る事ができます。</p>
+
+<pre><code>Usage: isay [--version] [--help] &lt;command&gt; [&lt;args&gt;]
+
+Available commands are:
+    goodbye    Say Hello.
+    hello      Say Goodbye.
+</code></pre>
+
+<p>このあたりは、<code>cli</code>パッケージが自動生成してくれており、コマンド名及び<code>--version</code>の値は
+<code>cli.NewCLI(&quot;isay&quot;, &quot;0.0.1&quot;)</code>で指定したものになります。</p>
+
+<pre><code>$ ./isay --version
+0.0.1
+</code></pre>
+
+<p>なお、<code>Available commands are:</code>の部分については<code>func Synopsis() string {}</code>の実装(返り値)が表示されます。</p>
+
+<p>最後に、<code>func Help() string {}</code>について。お気づきかもしれませんがサブコマンドの<code>--help</code>オプションの結果として表示することができます。</p>
+
+<pre><code>./isay hello --help
+Usage: isay hello
+
+$ ./isay goodbye --help
+Usage: isay goodbye
+</code></pre>
+
+<p>コードを貼ると大分記事が長くなってしまうので今回はここまで。</p>
+
+<p>触ってみて非常に便利だなと思いつつ、コマンド(アプリ)名とバージョンがハードコーティングになるところはうまくやりくりしたいですね。
+ちなみに参考に<a href="https://github.com/hashicorp/packer">packer</a>のソースをほんの少しだけ読みかじってみましたが、<code>Help()</code>の部分はハードコーティングされていました。</p>
+
+<h2 id="参考">参考</h2>
 
 <ul>
-<li>ある(@alalwww)さんのブログ記事: <a href="http://blog.awairo.net/blog/2013/12/24/octopress-aside-of-getting-profile-from-gravatar/">AwAlog</a></li>
-<li>GitHubのリポジトリ: <a href="https://github.com/alalwww/gravatar-aside">alalwww/gravatar-aside</a></li>
+<li><a href="https://github.com/mitchellh/cli">mitchellh/cli</a></li>
+<li><a href="https://qiita.com/uchiko/items/5e5cda98ecb510671e56">cliパッケージでサブコマンドを作る</a></li>
 </ul>
-
-<h2 id="設定ファイル-config-tomlの編集">設定ファイル: config.tomlの編集</h2>
-
-<p>HUGOでは、サイト全体で利用する<a href="https://gohugo.io/variables/site/">任意のパラメータ</a>は<code>[Params]</code>テーブル内に記述します。
-ここでは、Gravatarに登録したEメールのMD5ハッシュを<code>gravatar_hash</code>に設定します。</p>
-
-<pre><code>[Params]
-  gravatar_hash = &quot;a957567ba0ce0106c0d1cfa646acdb71&quot; # Gravatar hashed value of an email address
-</code></pre>
-
-<p>この設定を追加することで、テンプレート内から<code>.Site.Prams.gravatar_hash</code>として参照できるようになります。</p>
-
-<p>なお、メールアドレスのMD5ハッシュは以下のコマンドで取得できます。</p>
-
-<pre><code>$ md5 -s &quot;MyEmailAddress@example.com&quot;
-MD5 (&quot;MyEmailAddress@example.com&quot;) = a957567ba0ce0106c0d1cfa646acdb71
-</code></pre>
-
-<h2 id="partialsの作成">partialsの作成</h2>
-
-<p>HUGOは、<a href="https://gohugo.io/templates/partials/">partials</a>を定義することで、テンプレートをコンポーネントとして再利用することができます。
-配置場所はサイト構成情報のディレクトリ直下の<code>layouts/partials</code>またはテーマディレクトリ内の<code>layouts/partials</code>に設置可能です。<br />
-テーマ側をあまりいじりたくなかったので、今回はサイト構成情報ディレクトリ直下に配置することにしました。</p>
-
-<p><code>layouts/partials/gravatar.html</code></p>
-
-<pre><code>{{ if .Site.Params.gravatar_hash }}
-&lt;section&gt;
-  &lt;div id=&quot;gravatar-aside-profile&quot; style=&quot;clear:both&quot;&gt;
-    &lt;div style=&quot;height:2em&quot;&gt;&lt;span style=&quot;color:#ccc;font-size:small&quot;&gt;loading profile from gravatar...&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;
-  &lt;script type=&quot;text/javascript&quot;&gt;
-    $(function () {
-        var url = &quot;http://www.gravatar.com/{{ .Site.Params.gravatar_hash }}.json?callback=?&quot;;
-        var $box = $(&quot;#gravatar-aside-profile&quot;)
-        var $msg = $box.children().children()
-        var blink = function (a) {
-          a.fadeOut(400).fadeIn(400)
-        };
-        var intervalID = window.setInterval(blink, 1500, $msg)
-        var setupProfile = function (data) {
-          var entry = data.entry[0]
-          $box
-            .empty()
-            .css(&quot;padding-top&quot;, 5)
-            .append($(&quot;&lt;img&gt;&quot;)
-              .attr(&quot;src&quot;, entry.thumbnailUrl)
-              .attr(&quot;alt&quot;, &quot;thumbnail from Gravatar&quot;)
-              .css(&quot;float&quot;, &quot;left&quot;)
-              .css(&quot;margin-right&quot;, 5)
-            )
-            .append($(&quot;&lt;div&gt;&quot;)
-              .css(&quot;padding&quot;, &quot;5px 0px&quot;)
-              .append($(&quot;&lt;h2&gt;&quot;)
-                .css(&quot;margin-bottom&quot;, 5)
-                .append(&quot;&lt;a href='&quot; + entry.profileUrl + &quot;'&gt;&quot; + entry.displayName + &quot;&lt;/a&gt;&quot;)
-              )
-              .append($(&quot;&lt;div&gt;&quot;)
-                .css(&quot;clear&quot;, &quot;both&quot;)
-                .css(&quot;margin&quot;, 0)
-                .css(&quot;font-size&quot;, &quot;90%&quot;)
-                .html(entry.aboutMe.replace(/\n/g, &quot;&lt;br/&gt;&quot;))
-              )
-            )
-        }
-        var clearInterval = function () {
-          window.clearInterval(intervalID)
-        }
-        var updateMessageToError = function () {
-          $msg.stop().fadeOut().text(&quot;profile load failed.&quot;).fadeIn()
-        }
-        jQuery.getJSON(url)
-          .always(clearInterval)
-          .done(setupProfile)
-          .fail(updateMessageToError)
-    })
-  &lt;/script&gt;
-&lt;/section&gt;
-{{ end }}
-</code></pre>
-
-<h2 id="partials-gravatarの適応">partials/gravatarの適応</h2>
-
-<p>ここまでの設定でgraviatarの表示準備が完了いたしました。実際に表示するには、使用しているテーマファイルの修正が必要になります。</p>
-
-<p>テーマの表示したい位置に以下の記述を追加します。</p>
-
-<pre><code>{{ partial &quot;gravatar.html&quot; . }}
-</code></pre>
-
-<p>あとは、プレビューしつつ微調整するだけです。</p>
-
-<hr />
-
-<p>今回作成したpartialsは折を見て、GitHubで公開する予定でいます。</p>
 
 <p>以上。</p></div>
 
@@ -334,9 +379,7 @@ MD5 (&quot;MyEmailAddress@example.com&quot;) = a957567ba0ce0106c0d1cfa646acdb71
       <div>
         <ul class="p-terms">
           
-          <li><a href="http://blog.eksy.tokyo/tags/hugo/">HUGO</a></li>
-          
-          <li><a href="http://blog.eksy.tokyo/tags/gravatar/">Gravatar</a></li>
+          <li><a href="http://blog.eksy.tokyo/tags/golang/">golang</a></li>
           
         </ul>
       </div>

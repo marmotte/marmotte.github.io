@@ -12,7 +12,7 @@
     
     
     <item>
-      <title>DKIM用TXTレコード設定時、Route53にCharacterStringTooLong」と怒られた</title>
+      <title>DKIM用TXTレコード設定時、Route53に「CharacterStringTooLong」と怒られた</title>
       <link>http://blog.eksy.tokyo/post/route53-said-character-string-too-long/</link>
       <pubDate>Sat, 03 Mar 2018 17:15:22 +0900</pubDate>
       

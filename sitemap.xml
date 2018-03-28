@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/</loc>
+    <lastmod>2018-03-28T18:58:31+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/</loc>
     <lastmod>2018-03-27T20:20:46+09:00</lastmod>
   </url>
@@ -76,7 +81,7 @@
   
   <url>
     <loc>http://blog.eksy.tokyo/tags/golang/</loc>
-    <lastmod>2018-03-27T20:20:46+09:00</lastmod>
+    <lastmod>2018-03-28T18:58:31+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -112,13 +117,19 @@
   
   <url>
     <loc>http://blog.eksy.tokyo/post/</loc>
-    <lastmod>2018-03-27T20:20:46+09:00</lastmod>
+    <lastmod>2018-03-28T18:58:31+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.eksy.tokyo/tags/route53/</loc>
     <lastmod>2018-03-03T17:15:22+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://blog.eksy.tokyo/tags/ruby/</loc>
+    <lastmod>2018-03-18T12:20:52+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -142,13 +153,13 @@
   
   <url>
     <loc>http://blog.eksy.tokyo/</loc>
-    <lastmod>2018-03-27T20:20:46+09:00</lastmod>
+    <lastmod>2018-03-28T18:58:31+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/</loc>
-    <lastmod>2018-03-27T20:20:46+09:00</lastmod>
+    <lastmod>2018-03-28T18:58:31+09:00</lastmod>
     <priority>0</priority>
   </url>
   
