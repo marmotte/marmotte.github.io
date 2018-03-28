@@ -6,10 +6,21 @@
     <description>Recent content on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 21 Mar 2018 20:20:12 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 27 Mar 2018 20:20:46 +0900</lastBuildDate>
     
 	<atom:link href="http://blog.eksy.tokyo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GO言語で可変長引数(変数)を関数に渡す</title>
+      <link>http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/</link>
+      <pubDate>Tue, 27 Mar 2018 20:20:46 +0900</pubDate>
+      
+      <guid>http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/</guid>
+      <description>&lt;p&gt;Go言語で、&lt;code&gt;func Greeting(say string, who ...string)&lt;/code&gt;のような可変長引数を持つ関数に
+変数で値を渡す方法がわからず四苦八苦したのでメモ。乱筆気味ですが失礼します。
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>W3C Markup Validation Serviceが面白い</title>

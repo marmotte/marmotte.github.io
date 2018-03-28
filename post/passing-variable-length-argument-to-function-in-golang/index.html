@@ -8,29 +8,29 @@
 
 
 
-<link rel="canonical" href="http://blog.eksy.tokyo/post/gravatar-on-hugo/">
+<link rel="canonical" href="http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>GravatarのプロフィールをHUGOで表示する - re:inventing the wheel</title>
+    <title>GO言語で可変長引数(変数)を関数に渡す - re:inventing the wheel</title>
     
-<meta name="description" content="GravatarのプロフィールをHUGOで表示する">
+<meta name="description" content="GO言語で可変長引数(変数)を関数に渡す">
 
-<meta property="og:title" content="GravatarのプロフィールをHUGOで表示する - re:inventing the wheel">
+<meta property="og:title" content="GO言語で可変長引数(変数)を関数に渡す - re:inventing the wheel">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://blog.eksy.tokyo/post/gravatar-on-hugo/">
+<meta property="og:url" content="http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/">
 <meta property="og:image" content="http://blog.eksy.tokyo/images/default.png">
 <meta property="og:site_name" content="re:inventing the wheel">
-<meta property="og:description" content="GravatarのプロフィールをHUGOで表示する">
+<meta property="og:description" content="GO言語で可変長引数(変数)を関数に渡す">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="re:inventing the wheel">
-<meta name="twitter:url" content="http://blog.eksy.tokyo/post/gravatar-on-hugo/">
-<meta name="twitter:title" content="GravatarのプロフィールをHUGOで表示する - re:inventing the wheel">
-<meta name="twitter:description" content="GravatarのプロフィールをHUGOで表示する">
+<meta name="twitter:url" content="http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/">
+<meta name="twitter:title" content="GO言語で可変長引数(変数)を関数に渡す - re:inventing the wheel">
+<meta name="twitter:description" content="GO言語で可変長引数(変数)を関数に渡す">
 <meta name="twitter:image" content="http://blog.eksy.tokyo/images/default.png">
 
 
@@ -42,15 +42,15 @@
       "@type": "WebPage",
       "@id":"http://blog.eksy.tokyo/"
     },
-    "headline": "GravatarのプロフィールをHUGOで表示する - re:inventing the wheel",
+    "headline": "GO言語で可変長引数(変数)を関数に渡す - re:inventing the wheel",
     "image": {
       "@type": "ImageObject",
       "url": "http://blog.eksy.tokyo/images/default.png",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2018-03-02T19:38:37JST",
-    "dateModified": "2018-03-02T19:38:37JST",
+    "datePublished": "2018-03-27T20:20:46JST",
+    "dateModified": "2018-03-27T20:20:46JST",
     "author": {
       "@type": "Person",
       "name": "re:inventing the wheel"
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": "GravatarのプロフィールをHUGOで表示する"
+    "description": "GO言語で可変長引数(変数)を関数に渡す"
   }
 </script>
 
@@ -145,7 +145,7 @@ ga('send', 'pageview');
         
         <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://blog.eksy.tokyo/post/" itemprop="url"><span itemprop="title">post</span></a></li>
         
-        <li class="active">GravatarのプロフィールをHUGOで表示する</li>
+        <li class="active">GO言語で可変長引数(変数)を関数に渡す</li>
       </ol>
     </nav>
 
@@ -166,7 +166,7 @@ ga('send', 'pageview');
         js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.12';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
-      <div class="fb-like" data-href="http://blog.eksy.tokyo/post/gravatar-on-hugo/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+      <div class="fb-like" data-href="http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
     </li>
   </ul>
 </div>
@@ -175,123 +175,105 @@ ga('send', 'pageview');
     <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-02T19:38:37JST">Mar 2, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-27T20:20:46JST">Mar 27, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
       
     </ul>
 
-    <h1 class="title">GravatarのプロフィールをHUGOで表示する</h1>
+    <h1 class="title">GO言語で可変長引数(変数)を関数に渡す</h1>
   </header>
 
   
 
-  <div class="article-body"><p>Octopressの頃から<a href="https://en.gravatar.com/alalwww">ある(@alalwww)</a>さんの作成された<code>Gravatar aside in Octopress</code>を利用して
-<a href="https://en.gravatar.com">Gravatar</a>からプロフィール表示をしていましたが、HUGOでも利用したいと思いポーティングしてみました。<br />
-と言っても、基本的にはHUGOが利用するGo言語の<a href="https://golang.org/pkg/html/template/">テンプレートライブラリ</a>の記法に置き換えただけです。
+  <div class="article-body"><p>Go言語で、<code>func Greeting(say string, who ...string)</code>のような可変長引数を持つ関数に
+変数で値を渡す方法がわからず四苦八苦したのでメモ。乱筆気味ですが失礼します。
 </p>
 
-<h2 id="gravatar-aside-in-octopress関連のページ">Gravatar aside in Octopress関連のページ</h2>
+<h2 id="回答">回答</h2>
+
+<p><code>func Greeting()</code>では二番目要素以降が可変長として<code>...string</code>と定義しているため、
+関数から呼び出す時には、変数(ここでは<code>members</code>)にも<code>...</code>をつけて引き渡す必要あります。</p>
+
+<pre><code>package main
+
+import (
+	&quot;fmt&quot;
+	&quot;strings&quot;
+)
+
+func Greeting(say string, who ...string) {
+	fmt.Printf(&quot;%s %s\n&quot;, say, strings.Join(who, &quot;, &quot;))
+}
+
+func main() {
+	members := []string{&quot;Aさん&quot;, &quot;Bさん&quot;}
+	Greeting(&quot;こんにちは!&quot;, members...)
+}
+</code></pre>
+
+<h2 id="試行錯誤編">試行錯誤編</h2>
+
+<p>とりあえず可変長引数で渡して、正常動作することを確認してみます。</p>
+
+<pre><code>func main() {
+  Greeting(&quot;こんにちは!&quot;, &quot;Aさん&quot;, &quot;Bさん&quot;)
+}
+</code></pre>
+
+<pre><code>$ go run main.go
+こんにちは! Aさん, Bさん
+</code></pre>
+
+<p>しかし、以下のような呼び出し方をすると、<code>cannot use members (type []string) as type string in argument to Greeting</code>とエラーになり実行できません。</p>
+
+<pre><code>func main() {
+	members := []string{&quot;Aさん&quot;, &quot;Bさん&quot;}
+	Greeting(&quot;こんにちは!&quot;, members)
+}
+</code></pre>
+
+<p>指定の型に問題があるのかと思い、以下のようなコードを試してみましたが、やはり<code>func Greeting(say string, who ...string)</code>の<code>who</code>は<code>[]string</code>型となり前述のコードとの差異が理解できず悩む羽目になりました。</p>
+
+<pre><code>package main
+
+import (
+	&quot;fmt&quot;
+	&quot;reflect&quot;
+)
+
+func Greeting(say string, who ...string) {
+	fmt.Println(reflect.TypeOf(who))
+}
+
+func main() {
+	Greeting(&quot;こんにちは!&quot;, &quot;Aさん&quot;, &quot;Bさん&quot;)
+}
+</code></pre>
+
+<pre><code>$ go run main.go
+[]string
+</code></pre>
+
+<p>いろいろと調べ他結果、以下の文章を発見しました。</p>
+
+<blockquote>
+<p>If the final argument is assignable to a slice type []T, it may be passed unchanged as the value for a &hellip;T parameter if the argument is followed by &hellip;. In this case no new slice is created.</p>
+</blockquote>
+
+<p>ちょっとGoogle翻訳にかけて、、、</p>
+
+<blockquote>
+<p>最後の引数がslice型[]Tに代入可能な場合は、引数の後ろに&hellip;が続く場合は &hellip;Tパラメータの値としてそのまま渡されます。この場合、新しいスライスは作成されません。</p>
+</blockquote>
+
+<p>結局、私は <code>[]string</code>と<code>...string</code>の型は等価だと誤認していた事が原因でした。<br />
+もっと注意深くエラーメッセージを読んでいれば、<code>type string in argument</code>の <em>in argument</em> の部分で気がついたのかもしれませんね、、、</p>
+
+<h2 id="参考">参考</h2>
 
 <ul>
-<li>ある(@alalwww)さんのブログ記事: <a href="http://blog.awairo.net/blog/2013/12/24/octopress-aside-of-getting-profile-from-gravatar/">AwAlog</a></li>
-<li>GitHubのリポジトリ: <a href="https://github.com/alalwww/gravatar-aside">alalwww/gravatar-aside</a></li>
+<li><a href="https://golang.org/ref/spec#Passing_arguments_to_..._parameters">Passing arguments to &hellip; parameters</a></li>
 </ul>
-
-<h2 id="設定ファイル-config-tomlの編集">設定ファイル: config.tomlの編集</h2>
-
-<p>HUGOでは、サイト全体で利用する<a href="https://gohugo.io/variables/site/">任意のパラメータ</a>は<code>[Params]</code>テーブル内に記述します。
-ここでは、Gravatarに登録したEメールのMD5ハッシュを<code>gravatar_hash</code>に設定します。</p>
-
-<pre><code>[Params]
-  gravatar_hash = &quot;a957567ba0ce0106c0d1cfa646acdb71&quot; # Gravatar hashed value of an email address
-</code></pre>
-
-<p>この設定を追加することで、テンプレート内から<code>.Site.Prams.gravatar_hash</code>として参照できるようになります。</p>
-
-<p>なお、メールアドレスのMD5ハッシュは以下のコマンドで取得できます。</p>
-
-<pre><code>$ md5 -s &quot;MyEmailAddress@example.com&quot;
-MD5 (&quot;MyEmailAddress@example.com&quot;) = a957567ba0ce0106c0d1cfa646acdb71
-</code></pre>
-
-<h2 id="partialsの作成">partialsの作成</h2>
-
-<p>HUGOは、<a href="https://gohugo.io/templates/partials/">partials</a>を定義することで、テンプレートをコンポーネントとして再利用することができます。
-配置場所はサイト構成情報のディレクトリ直下の<code>layouts/partials</code>またはテーマディレクトリ内の<code>layouts/partials</code>に設置可能です。<br />
-テーマ側をあまりいじりたくなかったので、今回はサイト構成情報ディレクトリ直下に配置することにしました。</p>
-
-<p><code>layouts/partials/gravatar.html</code></p>
-
-<pre><code>{{ if .Site.Params.gravatar_hash }}
-&lt;section&gt;
-  &lt;div id=&quot;gravatar-aside-profile&quot; style=&quot;clear:both&quot;&gt;
-    &lt;div style=&quot;height:2em&quot;&gt;&lt;span style=&quot;color:#ccc;font-size:small&quot;&gt;loading profile from gravatar...&lt;/span&gt;&lt;/div&gt;
-  &lt;/div&gt;
-  &lt;div style=&quot;clear:both&quot;&gt;&lt;/div&gt;
-  &lt;script type=&quot;text/javascript&quot;&gt;
-    $(function () {
-        var url = &quot;http://www.gravatar.com/{{ .Site.Params.gravatar_hash }}.json?callback=?&quot;;
-        var $box = $(&quot;#gravatar-aside-profile&quot;)
-        var $msg = $box.children().children()
-        var blink = function (a) {
-          a.fadeOut(400).fadeIn(400)
-        };
-        var intervalID = window.setInterval(blink, 1500, $msg)
-        var setupProfile = function (data) {
-          var entry = data.entry[0]
-          $box
-            .empty()
-            .css(&quot;padding-top&quot;, 5)
-            .append($(&quot;&lt;img&gt;&quot;)
-              .attr(&quot;src&quot;, entry.thumbnailUrl)
-              .attr(&quot;alt&quot;, &quot;thumbnail from Gravatar&quot;)
-              .css(&quot;float&quot;, &quot;left&quot;)
-              .css(&quot;margin-right&quot;, 5)
-            )
-            .append($(&quot;&lt;div&gt;&quot;)
-              .css(&quot;padding&quot;, &quot;5px 0px&quot;)
-              .append($(&quot;&lt;h2&gt;&quot;)
-                .css(&quot;margin-bottom&quot;, 5)
-                .append(&quot;&lt;a href='&quot; + entry.profileUrl + &quot;'&gt;&quot; + entry.displayName + &quot;&lt;/a&gt;&quot;)
-              )
-              .append($(&quot;&lt;div&gt;&quot;)
-                .css(&quot;clear&quot;, &quot;both&quot;)
-                .css(&quot;margin&quot;, 0)
-                .css(&quot;font-size&quot;, &quot;90%&quot;)
-                .html(entry.aboutMe.replace(/\n/g, &quot;&lt;br/&gt;&quot;))
-              )
-            )
-        }
-        var clearInterval = function () {
-          window.clearInterval(intervalID)
-        }
-        var updateMessageToError = function () {
-          $msg.stop().fadeOut().text(&quot;profile load failed.&quot;).fadeIn()
-        }
-        jQuery.getJSON(url)
-          .always(clearInterval)
-          .done(setupProfile)
-          .fail(updateMessageToError)
-    })
-  &lt;/script&gt;
-&lt;/section&gt;
-{{ end }}
-</code></pre>
-
-<h2 id="partials-gravatarの適応">partials/gravatarの適応</h2>
-
-<p>ここまでの設定でgraviatarの表示準備が完了いたしました。実際に表示するには、使用しているテーマファイルの修正が必要になります。</p>
-
-<p>テーマの表示したい位置に以下の記述を追加します。</p>
-
-<pre><code>{{ partial &quot;gravatar.html&quot; . }}
-</code></pre>
-
-<p>あとは、プレビューしつつ微調整するだけです。</p>
-
-<hr />
-
-<p>今回作成したpartialsは折を見て、GitHubで公開する予定でいます。</p>
 
 <p>以上。</p></div>
 
@@ -334,9 +316,7 @@ MD5 (&quot;MyEmailAddress@example.com&quot;) = a957567ba0ce0106c0d1cfa646acdb71
       <div>
         <ul class="p-terms">
           
-          <li><a href="http://blog.eksy.tokyo/tags/hugo/">HUGO</a></li>
-          
-          <li><a href="http://blog.eksy.tokyo/tags/gravatar/">Gravatar</a></li>
+          <li><a href="http://blog.eksy.tokyo/tags/golang/">golang</a></li>
           
         </ul>
       </div>
