@@ -93,11 +93,35 @@ ga('send', 'pageview');
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-04-09T19:26:07JST">Apr 9, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://blog.eksy.tokyo/post/import-self-made-packages-in-golang/">Go言語で自作パッケージのimportではまったのでメモ</a></h2>
+  </header>
+
+  
+  <div class="summary"><p>これまで、<code>mainパッケージ</code>だけで済ませられるようなコードくらいしかGo言語で書くことがなかったのですが、
+ちょっと複雑なことをやろうと思い、自作パッケージに手を出したら<code>import</code>周りでハマったのでメモ。
+</p></div>
+
+  
+  <footer>
+    <a href="http://blog.eksy.tokyo/post/import-self-made-packages-in-golang/" title="Go言語で自作パッケージのimportではまったのでメモ">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-04-02T18:58:31JST">Apr 2, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-2/">GO言語でサブコマンド付きCLIアプリを作ってみる(2)</a></h2>
+    <h2 class="title"><a href="http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-2/">Go言語でサブコマンド付きCLIアプリを作ってみる(2)</a></h2>
   </header>
 
   
@@ -108,33 +132,7 @@ ga('send', 'pageview');
 
   
   <footer>
-    <a href="http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-2/" title="GO言語でサブコマンド付きCLIアプリを作ってみる(2)">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-28T18:58:31JST">Mar 28, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/">GO言語でサブコマンド付きCLIアプリを作ってみる(1)</a></h2>
-  </header>
-
-  
-  <div class="summary"><p>API叩いて云々するようなアプリを作りたいと思うと、やっぱりサブコマンドを実装したCLIツールを
-自作したいと思うのはエンジニアの嵯峨ですよね？w<br />
-いろいろと調べていたら<a href="https://github.com/mitchellh/cli">mitchellh/cli</a>(以下cliパッケージ)という&rdquo;Go CLI Library&rdquo;を発見したので触ってみました。
-このcliパッケージですが、Packer・Serf・Consul・Vault・Terraform・Nomadなどで使用されているそうです。
-</p></div>
-
-  
-  <footer>
-    <a href="http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/" title="GO言語でサブコマンド付きCLIアプリを作ってみる(1)">Read More…</a>
+    <a href="http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-2/" title="Go言語でサブコマンド付きCLIアプリを作ってみる(2)">Read More…</a>
   </footer>
   
 </article>
@@ -157,11 +155,37 @@ ga('send', 'pageview');
       <li><article class="li">
   <header>
     <ul class="p-facts">
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-28T18:58:31JST">Mar 28, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
+      
+    </ul>
+    <h2 class="title"><a href="http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/">Go言語でサブコマンド付きCLIアプリを作ってみる(1)</a></h2>
+  </header>
+
+  
+  <div class="summary"><p>API叩いて云々するようなアプリを作りたいと思うと、やっぱりサブコマンドを実装したCLIツールを
+自作したいと思うのはエンジニアの嵯峨ですよね？w<br />
+いろいろと調べていたら<a href="https://github.com/mitchellh/cli">mitchellh/cli</a>(以下cliパッケージ)という&rdquo;Go CLI Library&rdquo;を発見したので触ってみました。
+このcliパッケージですが、Packer・Serf・Consul・Vault・Terraform・Nomadなどで使用されているそうです。
+</p></div>
+
+  
+  <footer>
+    <a href="http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/" title="Go言語でサブコマンド付きCLIアプリを作ってみる(1)">Read More…</a>
+  </footer>
+  
+</article>
+</li>
+      
+      
+      <li><article class="li">
+  <header>
+    <ul class="p-facts">
       <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-27T20:20:46JST">Mar 27, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/">GO言語で可変長引数(変数)を関数に渡す</a></h2>
+    <h2 class="title"><a href="http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/">Go言語で可変長引数(変数)を関数に渡す</a></h2>
   </header>
 
   
@@ -171,7 +195,7 @@ ga('send', 'pageview');
 
   
   <footer>
-    <a href="http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/" title="GO言語で可変長引数(変数)を関数に渡す">Read More…</a>
+    <a href="http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/" title="Go言語で可変長引数(変数)を関数に渡す">Read More…</a>
   </footer>
   
 </article>
@@ -329,31 +353,6 @@ ga('send', 'pageview');
 </article>
 </li>
       
-      
-      <li><article class="li">
-  <header>
-    <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-03T17:15:22JST">Mar 3, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
-      
-    </ul>
-    <h2 class="title"><a href="http://blog.eksy.tokyo/post/route53-said-character-string-too-long/">DKIM用TXTレコード設定時、Route53に「CharacterStringTooLong」と怒られた</a></h2>
-  </header>
-
-  
-  <div class="summary"><p>久しぶりにDKIM用TXTレコードを設定しようとRoute53に追加したら、<code>CharacterStringTooLong (Value is too long) encountered</code>と怒られたのでメモ。</p>
-
-<p>冷静に考えれば、2048bitのキーを指定したので「そりゃそうだよね」と言う感じです。
-</p></div>
-
-  
-  <footer>
-    <a href="http://blog.eksy.tokyo/post/route53-said-character-string-too-long/" title="DKIM用TXTレコード設定時、Route53に「CharacterStringTooLong」と怒られた">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
 
       <div>
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -470,11 +469,13 @@ jQuery.getJSON(url)
     </div>
     <div class="list-group">
       
-      <a href="http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-2/" class="list-group-item">GO言語でサブコマンド付きCLIアプリを作ってみる(2)</a>
+      <a href="http://blog.eksy.tokyo/post/import-self-made-packages-in-golang/" class="list-group-item">Go言語で自作パッケージのimportではまったのでメモ</a>
       
-      <a href="http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/" class="list-group-item">GO言語でサブコマンド付きCLIアプリを作ってみる(1)</a>
+      <a href="http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-2/" class="list-group-item">Go言語でサブコマンド付きCLIアプリを作ってみる(2)</a>
       
-      <a href="http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/" class="list-group-item">GO言語で可変長引数(変数)を関数に渡す</a>
+      <a href="http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/" class="list-group-item">Go言語でサブコマンド付きCLIアプリを作ってみる(1)</a>
+      
+      <a href="http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/" class="list-group-item">Go言語で可変長引数(変数)を関数に渡す</a>
       
       <a href="http://blog.eksy.tokyo/post/interesting-service-w3c-markup-validation/" class="list-group-item">W3C Markup Validation Serviceが面白い</a>
       
@@ -487,8 +488,6 @@ jQuery.getJSON(url)
       <a href="http://blog.eksy.tokyo/post/create-bootable-usb-from-iso-file/" class="list-group-item">MacOSX上でISOファイルからインストールUSBディスクを作る</a>
       
       <a href="http://blog.eksy.tokyo/post/after-installing-pyenv-brew-doctor-issued-warning/" class="list-group-item">pyenvインストール後に brew doctor を実行するとWarningが出るのでその対処</a>
-      
-      <a href="http://blog.eksy.tokyo/post/route53-said-character-string-too-long/" class="list-group-item">DKIM用TXTレコード設定時、Route53に「CharacterStringTooLong」と怒られた</a>
       
     </div>
   </section>

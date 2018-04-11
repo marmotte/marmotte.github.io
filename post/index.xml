@@ -6,13 +6,24 @@
     <description>Recent content in Posts on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 02 Apr 2018 18:58:31 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 09 Apr 2018 19:26:07 +0900</lastBuildDate>
     
 	<atom:link href="http://blog.eksy.tokyo/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>GO言語でサブコマンド付きCLIアプリを作ってみる(2)</title>
+      <title>Go言語で自作パッケージのimportではまったのでメモ</title>
+      <link>http://blog.eksy.tokyo/post/import-self-made-packages-in-golang/</link>
+      <pubDate>Mon, 09 Apr 2018 19:26:07 +0900</pubDate>
+      
+      <guid>http://blog.eksy.tokyo/post/import-self-made-packages-in-golang/</guid>
+      <description>&lt;p&gt;これまで、&lt;code&gt;mainパッケージ&lt;/code&gt;だけで済ませられるようなコードくらいしかGo言語で書くことがなかったのですが、
+ちょっと複雑なことをやろうと思い、自作パッケージに手を出したら&lt;code&gt;import&lt;/code&gt;周りでハマったのでメモ。
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Go言語でサブコマンド付きCLIアプリを作ってみる(2)</title>
       <link>http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-2/</link>
       <pubDate>Mon, 02 Apr 2018 18:58:31 +0900</pubDate>
       
@@ -24,7 +35,7 @@
     </item>
     
     <item>
-      <title>GO言語でサブコマンド付きCLIアプリを作ってみる(1)</title>
+      <title>Go言語でサブコマンド付きCLIアプリを作ってみる(1)</title>
       <link>http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/</link>
       <pubDate>Wed, 28 Mar 2018 18:58:31 +0900</pubDate>
       
@@ -37,7 +48,7 @@
     </item>
     
     <item>
-      <title>GO言語で可変長引数(変数)を関数に渡す</title>
+      <title>Go言語で可変長引数(変数)を関数に渡す</title>
       <link>http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/</link>
       <pubDate>Tue, 27 Mar 2018 20:20:46 +0900</pubDate>
       

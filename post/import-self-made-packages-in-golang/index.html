@@ -8,29 +8,29 @@
 
 
 
-<link rel="canonical" href="http://blog.eksy.tokyo/topic/jpera/">
+<link rel="canonical" href="http://blog.eksy.tokyo/post/import-self-made-packages-in-golang/">
 
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>サイト: 「jpEra - 今年は和暦で？」 を作ってみました - re:inventing the wheel</title>
+    <title>Go言語で自作パッケージのimportではまったのでメモ - re:inventing the wheel</title>
     
-<meta name="description" content="サイト: jpEra - 今年は和暦で？ を作りました">
+<meta name="description" content="Go言語で自作パッケージのimportではまったのでメモ">
 
-<meta property="og:title" content="サイト: 「jpEra - 今年は和暦で？」 を作ってみました - re:inventing the wheel">
+<meta property="og:title" content="Go言語で自作パッケージのimportではまったのでメモ - re:inventing the wheel">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://blog.eksy.tokyo/topic/jpera/">
+<meta property="og:url" content="http://blog.eksy.tokyo/post/import-self-made-packages-in-golang/">
 <meta property="og:image" content="http://blog.eksy.tokyo/images/default.png">
 <meta property="og:site_name" content="re:inventing the wheel">
-<meta property="og:description" content="サイト: jpEra - 今年は和暦で？ を作りました">
+<meta property="og:description" content="Go言語で自作パッケージのimportではまったのでメモ">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="re:inventing the wheel">
-<meta name="twitter:url" content="http://blog.eksy.tokyo/topic/jpera/">
-<meta name="twitter:title" content="サイト: 「jpEra - 今年は和暦で？」 を作ってみました - re:inventing the wheel">
-<meta name="twitter:description" content="サイト: jpEra - 今年は和暦で？ を作りました">
+<meta name="twitter:url" content="http://blog.eksy.tokyo/post/import-self-made-packages-in-golang/">
+<meta name="twitter:title" content="Go言語で自作パッケージのimportではまったのでメモ - re:inventing the wheel">
+<meta name="twitter:description" content="Go言語で自作パッケージのimportではまったのでメモ">
 <meta name="twitter:image" content="http://blog.eksy.tokyo/images/default.png">
 
 
@@ -42,15 +42,15 @@
       "@type": "WebPage",
       "@id":"http://blog.eksy.tokyo/"
     },
-    "headline": "サイト: 「jpEra - 今年は和暦で？」 を作ってみました - re:inventing the wheel",
+    "headline": "Go言語で自作パッケージのimportではまったのでメモ - re:inventing the wheel",
     "image": {
       "@type": "ImageObject",
       "url": "http://blog.eksy.tokyo/images/default.png",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2018-03-03T10:07:39JST",
-    "dateModified": "2018-03-03T10:07:39JST",
+    "datePublished": "2018-04-09T19:26:07JST",
+    "dateModified": "2018-04-09T19:26:07JST",
     "author": {
       "@type": "Person",
       "name": "re:inventing the wheel"
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": "サイト: jpEra - 今年は和暦で？ を作りました"
+    "description": "Go言語で自作パッケージのimportではまったのでメモ"
   }
 </script>
 
@@ -143,9 +143,9 @@ ga('send', 'pageview');
       <ol class="breadcrumb">
         <li><a href="http://blog.eksy.tokyo/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
         
-        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://blog.eksy.tokyo/topic/" itemprop="url"><span itemprop="title">topic</span></a></li>
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://blog.eksy.tokyo/post/" itemprop="url"><span itemprop="title">post</span></a></li>
         
-        <li class="active">サイト: 「jpEra - 今年は和暦で？」 を作ってみました</li>
+        <li class="active">Go言語で自作パッケージのimportではまったのでメモ</li>
       </ol>
     </nav>
 
@@ -166,7 +166,7 @@ ga('send', 'pageview');
         js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.12';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
-      <div class="fb-like" data-href="http://blog.eksy.tokyo/topic/jpera/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+      <div class="fb-like" data-href="http://blog.eksy.tokyo/post/import-self-made-packages-in-golang/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
     </li>
   </ul>
 </div>
@@ -175,21 +175,111 @@ ga('send', 'pageview');
     <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-03T10:07:39JST">Mar 3, 2018</time></li>
-      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/topic/">topic</a></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-04-09T19:26:07JST">Apr 9, 2018</time></li>
+      <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
       
     </ul>
 
-    <h1 class="title">サイト: 「jpEra - 今年は和暦で？」 を作ってみました</h1>
+    <h1 class="title">Go言語で自作パッケージのimportではまったのでメモ</h1>
   </header>
 
   
 
-  <div class="article-body"><p>トピックと言う程のものではありませんが、「<a href="http://jpera.eksy.tokyo/">jpEra - 今年は和暦で？</a>」を勉強がてら作ってみました。
-最近西暦表記メインで年に数回使うか使わないかの年号表記を毎度調べるのもめんどくさいなということで、、、
+  <div class="article-body"><p>これまで、<code>mainパッケージ</code>だけで済ませられるようなコードくらいしかGo言語で書くことがなかったのですが、
+ちょっと複雑なことをやろうと思い、自作パッケージに手を出したら<code>import</code>周りでハマったのでメモ。
 </p>
 
-<p><a href="http://jpera.eksy.tokyo/"><img src="/images/jpera.png" alt="jpEra" /></a></p></div>
+<p>正確にはハマったと言うよりも、Go言語のお作法を理解せずに書いていいたのが原因だったのですが、、、</p>
+
+<h2 id="ワークスペースを理解して問題解決">ワークスペースを理解して問題解決</h2>
+
+<h3 id="ハマったところ">ハマったところ</h3>
+
+<p>以下のようのなディレクトリ構成で、<code>bar.go</code>から<code>foo</code>パッケージを<code>import ../foo</code>のように相対パス指定すると
+IntelliJで<code>Unresolved reference</code>と関数を呼び出すときに怒られてしまった。</p>
+
+<pre><code>.
+├── bar
+│   └── bar.go
+├── foo
+│   └── foo.go
+└── main.go
+</code></pre>
+
+<p>ついでに、自作パッケージを以下のようにインポート(go getなしで)できるようにしたい。</p>
+
+<pre><code>import &quot;github.com/[username]/[repo-name]&quot;
+</code></pre>
+
+<h3 id="原因">原因</h3>
+
+<p><a href="https://nulab-inc.com/ja/blog/nulab/go-beginner-problem-and-solution/">参考URL</a>や
+<a href="https://golang.org/cmd/go/#hdr-Relative_import_paths">ドキュメント</a>を確認すると、
+Go言語的に ./ または ../ の相対パスをサポートしているようですが、推奨していないようです。</p>
+
+<blockquote>
+<p>To avoid ambiguity, Go programs cannot use relative import paths within a work space.<br />
+&gt; あいまいさを避けるため、Goプログラムは作業領域内の相対インポート・パスを使用できません。</p>
+</blockquote>
+
+<p>どうやら、相対パスは簡単にマルチパッケージを検証するための機能のようですね。</p>
+
+<blockquote>
+<p>This makes it easy to experiment with small multipackage programs outside of the usual work spaces.<br />
+&gt; 通常の作業スペースの外にある小さなマルチパッケージプログラムを使って簡単に試すことができます。</p>
+</blockquote>
+
+<h3 id="対策">対策</h3>
+
+<p>ワークスペース内で開発する事で問題が解決できました。<br />
+ワークスペースとは<code>GOPATH</code>環境変数で指定したディレクトリで、未指定の場合<code>$HOME/go</code>となるようです。</p>
+
+<p>また、<code>import &quot;github.com/[username]/[repo-name]&quot;</code>としたい場合、</p>
+
+<pre><code>cd $GOPATH
+mkdir -p src/github.com/[username]/[repo-name]
+</code></pre>
+
+<p>として、<code>src/github.com/[username]/[repo-name]</code>配下で開発を行います。</p>
+
+<p>なお、私の場合は次の項で話題にする部分から逸脱してしまいますが、IntelliJでコードを書くことを優先に</p>
+
+<pre><code>$ export $HOME/.go:$HOME/Development/golang
+</code></pre>
+
+<p>と、<code>GOPATH</code>を2つ設定しています。<br />
+一応、<code>go get</code>コマンドで取得したパッケージは全て <em>先頭</em> に記載されたパスになるとのことらしいので、、、
+とりあえず現状問題は発生していないように見受けられます。</p>
+
+<h2 id="ワークスペースについて">ワークスペースについて</h2>
+
+<p><a href="https://golang.org/doc/code.html">ドキュメント</a>(オーバービュー)を読むと、</p>
+
+<p>すべてのプロジェクトが別々のワークスペースを持ち、ワークスペースがバージョン管理リポジトリと緊密に結びついている他のプログラミング環境とは異なります。</p>
+
+<ul>
+<li>通常、すべてのGoコードを1つのワークスペースに保持します</li>
+<li>ワークスペースには、多くの<code>Version Control</code>のリポジトリが含まれます(Gitなど)</li>
+<li>各リポジトリには1つ以上のパッケージが含まれています。</li>
+<li>各パッケージは、1つまたは複数のGoソースファイルで構成されています。</li>
+<li>パッケージのディレクトリへのパスによって、インポートパスが決まります。</li>
+</ul>
+
+<p>だ、そうです。</p>
+
+<h2 id="感想">感想</h2>
+
+<p>ちょこっと触っただけでも動くものが開発できるGo言語の魅力を改めて感じました。<br />
+しかし、このワークスペースの概念はIDEに慣れているとちょっと厄介ですよね？w</p>
+
+<h2 id="参考">参考</h2>
+
+<ul>
+<li><a href="https://nulab-inc.com/ja/blog/nulab/go-beginner-problem-and-solution/">Go言語を使ってみて、個人的に引っかかったところと対処法。</a></li>
+<li><a href="https://qiita.com/ksato9700/items/6228d4eb6d5b282f82f6#2-2">Go言語で幸せになれる10のテクニック</a></li>
+</ul>
+
+<p>以上。</p></div>
 
   <div>
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -215,13 +305,26 @@ ga('send', 'pageview');
       <div>
         <ul class="p-terms">
           
-          <li><a href="http://blog.eksy.tokyo/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF%E3%82%B9/">トピックス</a></li>
+          <li><a href="http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/">エンジニアブログ</a></li>
           
         </ul>
       </div>
     </section>
     
     
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://blog.eksy.tokyo/tags/golang/">golang</a></li>
+          
+        </ul>
+      </div>
+    </section>
     
     
   </footer>
