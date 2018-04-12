@@ -9,28 +9,28 @@
 
 
 
-<link rel="canonical" href="http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/">
+<link rel="canonical" href="http://blog.eksy.tokyo/post/this-is-en-page-but-not/">
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>Go言語で可変長引数(変数)を関数に渡す - re:inventing the wheel</title>
+    <title>「これは英語のページです」の回避方法 - re:inventing the wheel</title>
     
-<meta name="description" content="Go言語で可変長引数(変数)を関数に渡す">
+<meta name="description" content="chromeで「これは英語のページです。翻訳しますか？」の回避方法">
 
-<meta property="og:title" content="Go言語で可変長引数(変数)を関数に渡す - re:inventing the wheel">
+<meta property="og:title" content="「これは英語のページです」の回避方法 - re:inventing the wheel">
 <meta property="og:type" content="article">
-<meta property="og:url" content="http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/">
+<meta property="og:url" content="http://blog.eksy.tokyo/post/this-is-en-page-but-not/">
 <meta property="og:image" content="http://blog.eksy.tokyo/images/default.png">
 <meta property="og:site_name" content="re:inventing the wheel">
-<meta property="og:description" content="Go言語で可変長引数(変数)を関数に渡す">
+<meta property="og:description" content="chromeで「これは英語のページです。翻訳しますか？」の回避方法">
 <meta property="og:locale" content="ja_JP">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="re:inventing the wheel">
-<meta name="twitter:url" content="http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/">
-<meta name="twitter:title" content="Go言語で可変長引数(変数)を関数に渡す - re:inventing the wheel">
-<meta name="twitter:description" content="Go言語で可変長引数(変数)を関数に渡す">
+<meta name="twitter:url" content="http://blog.eksy.tokyo/post/this-is-en-page-but-not/">
+<meta name="twitter:title" content="「これは英語のページです」の回避方法 - re:inventing the wheel">
+<meta name="twitter:description" content="chromeで「これは英語のページです。翻訳しますか？」の回避方法">
 <meta name="twitter:image" content="http://blog.eksy.tokyo/images/default.png">
 
 
@@ -42,15 +42,15 @@
       "@type": "WebPage",
       "@id":"http://blog.eksy.tokyo/"
     },
-    "headline": "Go言語で可変長引数(変数)を関数に渡す - re:inventing the wheel",
+    "headline": "「これは英語のページです」の回避方法 - re:inventing the wheel",
     "image": {
       "@type": "ImageObject",
       "url": "http://blog.eksy.tokyo/images/default.png",
       "height": 800,
       "width": 800
     },
-    "datePublished": "2018-03-27T20:20:46JST",
-    "dateModified": "2018-03-27T20:20:46JST",
+    "datePublished": "2018-04-11T21:25:58JST",
+    "dateModified": "2018-04-11T21:25:58JST",
     "author": {
       "@type": "Person",
       "name": "re:inventing the wheel"
@@ -65,7 +65,7 @@
         "height": 60
       }
     },
-    "description": "Go言語で可変長引数(変数)を関数に渡す"
+    "description": "chromeで「これは英語のページです。翻訳しますか？」の回避方法"
   }
 </script>
 
@@ -137,7 +137,7 @@ ga('send', 'pageview');
         
         <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://blog.eksy.tokyo/post/" itemprop="url"><span itemprop="title">post</span></a></li>
         
-        <li class="active">Go言語で可変長引数(変数)を関数に渡す</li>
+        <li class="active">「これは英語のページです」の回避方法</li>
       </ol>
     </nav>
 
@@ -158,10 +158,10 @@ ga('send', 'pageview');
         js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.12';
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));</script>
-      <div class="fb-like" data-href="http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+      <div class="fb-like" data-href="http://blog.eksy.tokyo/post/this-is-en-page-but-not/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
     </li>
     <li>
-      <a data-pocket-label="pocket" data-pocket-count="none" class="pocket-btn" data-lang="ja" data-save-url="http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/"></a>
+      <a data-pocket-label="pocket" data-pocket-count="none" class="pocket-btn" data-lang="ja" data-save-url="http://blog.eksy.tokyo/post/this-is-en-page-but-not/"></a>
       <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
     </li>
   </ul>
@@ -171,104 +171,45 @@ ga('send', 'pageview');
     <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-27T20:20:46JST">Mar 27, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-04-11T21:25:58JST">Apr 11, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
       
     </ul>
 
-    <h1 class="title">Go言語で可変長引数(変数)を関数に渡す</h1>
+    <h1 class="title">「これは英語のページです」の回避方法</h1>
   </header>
 
   
 
-  <div class="article-body"><p>Go言語で、<code>func Greeting(say string, who ...string)</code>のような可変長引数を持つ関数に
-変数で値を渡す方法がわからず四苦八苦したのでメモ。乱筆気味ですが失礼します。
+  <div class="article-body"><p>このブログも少しは記事が溜まったのでちょっと過去の投稿を眺めていると、chromeブラウザから「これは<code>英語</code>のページです。翻訳しますか？」と言われてしまいました。<br />
+日本語でしか書く予定がないのでちょっと対策したのでメモ。
 </p>
 
-<h2 id="回答">回答</h2>
+<h2 id="対策">対策</h2>
 
-<p><code>func Greeting()</code>では二番目要素以降が可変長として<code>...string</code>と定義しているため、
-関数から呼び出す時には、変数(ここでは<code>members</code>)にも<code>...</code>をつけて引き渡す必要あります。</p>
+<p>対象ページの言語を明示してやることで解決できます。</p>
 
-<pre><code>package main
-
-import (
-	&quot;fmt&quot;
-	&quot;strings&quot;
-)
-
-func Greeting(say string, who ...string) {
-	fmt.Printf(&quot;%s %s\n&quot;, say, strings.Join(who, &quot;, &quot;))
-}
-
-func main() {
-	members := []string{&quot;Aさん&quot;, &quot;Bさん&quot;}
-	Greeting(&quot;こんにちは!&quot;, members...)
-}
+<pre><code>&lt;html lang=&quot;ja&quot;&gt;
+&lt;head&gt;
+  &lt;meta http-equiv=&quot;content-language&quot; content=&quot;ja&quot;&gt;
+  &lt;title&gt; .....
 </code></pre>
 
-<h2 id="試行錯誤編">試行錯誤編</h2>
+<p>ちなみに、HUGOで利用するとなると、<code>languageCode</code>と連動させた方が良いのかなと思います。</p>
 
-<p>とりあえず可変長引数で渡して、正常動作することを確認してみます。</p>
-
-<pre><code>func main() {
-  Greeting(&quot;こんにちは!&quot;, &quot;Aさん&quot;, &quot;Bさん&quot;)
-}
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html{{ if .Site.LanguageCode }} lang=&quot;{{ .Site.LanguageCode }}&quot;{{ end }}&gt;
+  &lt;head&gt;
+    {{ if .Site.LanguageCode }}&lt;meta http-equiv=&quot;content-language&quot; content=&quot;{{ .Site.LanguageCode }}&quot;&gt;{{ end }}
 </code></pre>
 
-<pre><code>$ go run main.go
-こんにちは! Aさん, Bさん
-</code></pre>
-
-<p>しかし、以下のような呼び出し方をすると、<code>cannot use members (type []string) as type string in argument to Greeting</code>とエラーになり実行できません。</p>
-
-<pre><code>func main() {
-	members := []string{&quot;Aさん&quot;, &quot;Bさん&quot;}
-	Greeting(&quot;こんにちは!&quot;, members)
-}
-</code></pre>
-
-<p>指定の型に問題があるのかと思い、以下のようなコードを試してみましたが、やはり<code>func Greeting(say string, who ...string)</code>の<code>who</code>は<code>[]string</code>型となり前述のコードとの差異が理解できず悩む羽目になりました。</p>
-
-<pre><code>package main
-
-import (
-	&quot;fmt&quot;
-	&quot;reflect&quot;
-)
-
-func Greeting(say string, who ...string) {
-	fmt.Println(reflect.TypeOf(who))
-}
-
-func main() {
-	Greeting(&quot;こんにちは!&quot;, &quot;Aさん&quot;, &quot;Bさん&quot;)
-}
-</code></pre>
-
-<pre><code>$ go run main.go
-[]string
-</code></pre>
-
-<p>いろいろと調べ他結果、以下の文章を発見しました。</p>
-
-<blockquote>
-<p>If the final argument is assignable to a slice type []T, it may be passed unchanged as the value for a &hellip;T parameter if the argument is followed by &hellip;. In this case no new slice is created.</p>
-</blockquote>
-
-<p>ちょっとGoogle翻訳にかけて、、、</p>
-
-<blockquote>
-<p>最後の引数がslice型[]Tに代入可能な場合は、引数の後ろに&hellip;が続く場合は &hellip;Tパラメータの値としてそのまま渡されます。この場合、新しいスライスは作成されません。</p>
-</blockquote>
-
-<p>結局、私は <code>[]string</code>と<code>...string</code>の型は等価だと誤認していた事が原因でした。<br />
-もっと注意深くエラーメッセージを読んでいれば、<code>type string in argument</code>の <em>in argument</em> の部分で気がついたのかもしれませんね、、、</p>
+<p>こんな感じでしょうか？</p>
 
 <h2 id="参考">参考</h2>
 
 <ul>
-<li><a href="https://golang.org/ref/spec#Passing_arguments_to_..._parameters">Passing arguments to &hellip; parameters</a></li>
+<li><a href="http://www.tagindex.com/html5/page/meta_language.html">文書の言語を指定する</a></li>
+<li><a href="http://delaymania.com/201305/web/this_is_en_page/">これは英語のページです」を回避する方法</a></li>
 </ul>
 
 <p>以上。</p></div>
@@ -312,7 +253,9 @@ func main() {
       <div>
         <ul class="p-terms">
           
-          <li><a href="http://blog.eksy.tokyo/tags/golang/">golang</a></li>
+          <li><a href="http://blog.eksy.tokyo/tags/markup/">markup</a></li>
+          
+          <li><a href="http://blog.eksy.tokyo/tags/hugo/">HUGO</a></li>
           
         </ul>
       </div>
