@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>http://blog.eksy.tokyo/post/using-append-in-golang/</loc>
+    <lastmod>2018-04-16T19:40:13+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://blog.eksy.tokyo/post/this-is-en-page-but-not/</loc>
     <lastmod>2018-04-11T21:25:58+09:00</lastmod>
   </url>
@@ -96,7 +101,7 @@
   
   <url>
     <loc>http://blog.eksy.tokyo/tags/golang/</loc>
-    <lastmod>2018-04-09T19:26:07+09:00</lastmod>
+    <lastmod>2018-04-16T19:40:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -132,7 +137,7 @@
   
   <url>
     <loc>http://blog.eksy.tokyo/post/</loc>
-    <lastmod>2018-04-11T21:25:58+09:00</lastmod>
+    <lastmod>2018-04-16T19:40:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -168,13 +173,13 @@
   
   <url>
     <loc>http://blog.eksy.tokyo/</loc>
-    <lastmod>2018-04-11T21:25:58+09:00</lastmod>
+    <lastmod>2018-04-16T19:40:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/</loc>
-    <lastmod>2018-04-11T21:25:58+09:00</lastmod>
+    <lastmod>2018-04-16T19:40:13+09:00</lastmod>
     <priority>0</priority>
   </url>
   

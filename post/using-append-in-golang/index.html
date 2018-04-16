@@ -7,15 +7,69 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="generator" content="Hugo 0.38.2" />
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.eksy.tokyo/tags/atom/index.xml">
 
-<link rel="canonical" href="http://blog.eksy.tokyo/tags/atom/">
+
+<link rel="canonical" href="http://blog.eksy.tokyo/post/using-append-in-golang/">
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>Atom - re:inventing the wheel</title>
+    <title>Go言語のappendの使い方 - re:inventing the wheel</title>
     
+<meta name="description" content="Go言語のappendの使い方">
+
+<meta property="og:title" content="Go言語のappendの使い方 - re:inventing the wheel">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://blog.eksy.tokyo/post/using-append-in-golang/">
+<meta property="og:image" content="http://blog.eksy.tokyo/images/default.png">
+<meta property="og:site_name" content="re:inventing the wheel">
+<meta property="og:description" content="Go言語のappendの使い方">
+<meta property="og:locale" content="ja_JP">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="re:inventing the wheel">
+<meta name="twitter:url" content="http://blog.eksy.tokyo/post/using-append-in-golang/">
+<meta name="twitter:title" content="Go言語のappendの使い方 - re:inventing the wheel">
+<meta name="twitter:description" content="Go言語のappendの使い方">
+<meta name="twitter:image" content="http://blog.eksy.tokyo/images/default.png">
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id":"http://blog.eksy.tokyo/"
+    },
+    "headline": "Go言語のappendの使い方 - re:inventing the wheel",
+    "image": {
+      "@type": "ImageObject",
+      "url": "http://blog.eksy.tokyo/images/default.png",
+      "height": 800,
+      "width": 800
+    },
+    "datePublished": "2018-04-16T19:40:13JST",
+    "dateModified": "2018-04-16T19:40:13JST",
+    "author": {
+      "@type": "Person",
+      "name": "re:inventing the wheel"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "re:inventing the wheel",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "http://blog.eksy.tokyo/images/logo.png",
+        "width": 600,
+        "height": 60
+      }
+    },
+    "description": "Go言語のappendの使い方"
+  }
+</script>
+
+
     <link href="http://blog.eksy.tokyo/css/styles.css" rel="stylesheet">
     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -77,61 +131,144 @@ ga('send', 'pageview');
 <div class="row">
   <div class="col-md-8">
 
-    
-    <header class="page-header">
-      <h1>Atom</h1>
-    </header>
-    
+    <nav class="p-crumb">
+      <ol class="breadcrumb">
+        <li><a href="http://blog.eksy.tokyo/"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+        
+        <li itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="http://blog.eksy.tokyo/post/" itemprop="url"><span itemprop="title">post</span></a></li>
+        
+        <li class="active">Go言語のappendの使い方</li>
+      </ol>
+    </nav>
 
-    <ul class="p-articles">
-      
-      
-      <li><article class="li">
+<div>
+  <ul class="sns">
+    <li>
+      <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-counter" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    </li>
+    <li>
+      <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </li>
+    <li>
+      <div id="fb-root" style="display: none"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.12';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+      <div class="fb-like" data-href="http://blog.eksy.tokyo/post/using-append-in-golang/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+    </li>
+    <li>
+      <a data-pocket-label="pocket" data-pocket-count="none" class="pocket-btn" data-lang="ja" data-save-url="http://blog.eksy.tokyo/post/using-append-in-golang/"></a>
+      <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
+    </li>
+  </ul>
+</div>
+
+
+    <article class="single">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-12T22:23:42JST">Mar 12, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-04-16T19:40:13JST">Apr 16, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="http://blog.eksy.tokyo/post/terminal-on-atom/">AtomでTerminalを使って見た</a></h2>
+
+    <h1 class="title">Go言語のappendの使い方</h1>
   </header>
 
-  <a href="http://blog.eksy.tokyo/post/terminal-on-atom/" class="thumb" title="AtomでTerminalを使って見た" style="background-image: url(http://blog.eksy.tokyo//images/platformio-ide-terminal-hugo-new.png);"></a>
-  <div class="summary"><p>プレビュー機能がとても便利なため、長らく<a href="http://www.markdown.jp/what-is-markdown/">Markdown</a>エディタ+ちょっとした開発環境として
-<a href="https://atom.io">ATOM</a>を利用してきましたが、ふとターミナル(コマンドライン)が使えないかなと思い調べたところ
-<a href="https://atom.io/packages/platformio-ide-terminal">PlatformIO IDE Terminal</a>なるパッケージを発見したためインストールして見ました。</p>
-
-<p>数日使用して見ましたが、とても便利だったため今後の環境づくりのためメモを残しておきます。
-</p></div>
-
   
-  <footer>
-    <a href="http://blog.eksy.tokyo/post/terminal-on-atom/" title="AtomでTerminalを使って見た">Read More…</a>
-  </footer>
-  
-</article>
-</li>
-      
 
+  <div class="article-body"><p>Go言語でSliceに要素を追加しようと<code>append()</code>を利用した際に&rdquo;evaluated but not used&rdquo;というエラーで <strong>2度もハマった</strong> のでメモ。
+</p>
+
+<h2 id="このコードどう思う">このコードどう思う？</h2>
+
+<p>PHPやRubyなどを使っていると、こんなコードを見ても違和感ないですよね？</p>
+
+<pre><code>func main() {
+  var s []string
+  append(s, &quot;hoge&quot;)
+  append(s, &quot;fuga&quot;)
+}
+</code></pre>
+
+<p>まぁ、この記述が諸悪の根源だったりします。<br />
+appendは<code>func append(s []T, vs ...T) []T</code>と定義されているため、返り値があります。</p>
+
+<p>正しくは、以下のように記述する必要があります。</p>
+
+<pre><code>func main() {
+  var s []string
+  s = append(s, &quot;hoge&quot;)
+  s = append(s, &quot;fuga&quot;)
+}
+</code></pre>
+
+<h2 id="参考">参考</h2>
+
+<ul>
+<li><a href="https://tour.golang.org/moretypes/15">Appending to a slice</a></li>
+</ul>
+
+<p>以上。</p></div>
+
+  <div>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <ins class="adsbygoogle"
+    style="display:block"
+    data-ad-format="fluid"
+    data-ad-layout-key="-ce+31+3w-9j+pi"
+    data-ad-client="ca-pub-6654532477291148"
+    data-ad-slot="1052708286"></ins>
+    <script>
+    (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+  </div>
+
+  <footer class="article-footer">
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">CATEGORIES</div>
+      </header>
       <div>
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <ins class="adsbygoogle"
-        style="display:block"
-        data-ad-format="fluid"
-        data-ad-layout-key="-ce+31+3w-9j+pi"
-        data-ad-client="ca-pub-6654532477291148"
-        data-ad-slot="1052708286"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
+        <ul class="p-terms">
+          
+          <li><a href="http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/">エンジニアブログ</a></li>
+          
+        </ul>
       </div>
+    </section>
+    
+    
+    
+    <section class="bordered">
+      <header>
+        <div class="panel-title">TAGS</div>
+      </header>
+      <div>
+        <ul class="p-terms">
+          
+          <li><a href="http://blog.eksy.tokyo/tags/golang/">golang</a></li>
+          
+        </ul>
+      </div>
+    </section>
+    
+    
+  </footer>
 
-    </ul>
+</article>
+
 
     
-
-
   </div>
+
   <div class="col-md-4">
     
 <aside class="l-sidebar">
