@@ -6,10 +6,22 @@
     <description>Recent content in エンジニアブログ on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Apr 2018 19:40:13 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 24 Apr 2018 18:00:14 +0900</lastBuildDate>
     
 	<atom:link href="http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Go言語のファイル出力が面白い</title>
+      <link>http://blog.eksy.tokyo/post/interesting-file-output-for-golang/</link>
+      <pubDate>Tue, 24 Apr 2018 18:00:14 +0900</pubDate>
+      
+      <guid>http://blog.eksy.tokyo/post/interesting-file-output-for-golang/</guid>
+      <description>&lt;p&gt;GoLangでちょっとしたコマンドを作っていくと、実行結果を標準出力だったりファイル出力だったり
+切り替えたいと思うことがあります(というか、自分はそう思いました)。
+色々さわってみたところ、&lt;code&gt;os.Stdout&lt;/code&gt;と&lt;code&gt;os.Create&lt;/code&gt;の型が同じだったので備忘録に残しておきます。
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Go言語のappendの使い方</title>
