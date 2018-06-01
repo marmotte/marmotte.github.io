@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lego on re:inventing the wheel</title>
+    <link>http://blog.eksy.tokyo/tags/lego/</link>
+    <description>Recent content in Lego on re:inventing the wheel</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 31 May 2018 23:14:08 +0900</lastBuildDate>
+    
+	<atom:link href="http://blog.eksy.tokyo/tags/lego/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Let&#39;sEncryptのワイルドカード証明書取得ならlegoがお薦め</title>
+      <link>http://blog.eksy.tokyo/post/lego-is-recommend-to-wildcard-certificate-for-letsencrypt/</link>
+      <pubDate>Thu, 31 May 2018 23:14:08 +0900</pubDate>
+      
+      <guid>http://blog.eksy.tokyo/post/lego-is-recommend-to-wildcard-certificate-for-letsencrypt/</guid>
+      <description>&lt;p&gt;Let&amp;rsquo;sEncryptも今年3月に入りようやくワイルドカード証明書に対応しましたが、
+一方でワイルドカード取得にはACMEv2の&lt;code&gt;DNS-01 Challenge&lt;/code&gt;によるドメイン所有権確認が必須となりました。&lt;/p&gt;
+
+&lt;p&gt;頻繁に証明書更新が必要(最長でも90日)な上、DNSレコードの編集までとなるとあまりカジュアルじゃないですよね。
+そこで今回はDNS-01に対応したACME Clientがないかと調べ&lt;a href=&#34;https://github.com/xenolf/lego&#34;&gt;lego&lt;/a&gt;を見つけたので紹介いたします。&lt;/p&gt;
+
+&lt;p&gt;なお、本日(2018/5/31)にリリースされた&lt;code&gt;v1.0.0&lt;/code&gt;よりACMEv2対応になっています。
+&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

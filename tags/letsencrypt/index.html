@@ -7,14 +7,14 @@
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 <meta name="generator" content="Hugo 0.41" />
 
-<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.eksy.tokyo/tags/gravatar/index.xml">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="http://blog.eksy.tokyo/tags/letsencrypt/index.xml">
 
-<link rel="canonical" href="http://blog.eksy.tokyo/tags/gravatar/">
+<link rel="canonical" href="http://blog.eksy.tokyo/tags/letsencrypt/">
 
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/solarized_dark.min.css">
-    <title>Gravatar - re:inventing the wheel</title>
+    <title>Letsencrypt - re:inventing the wheel</title>
     
     <link href="http://blog.eksy.tokyo/css/styles.css" rel="stylesheet">
     
@@ -82,7 +82,7 @@ if (!doNotTrack) {
 
     
     <header class="page-header">
-      <h1>Gravatar</h1>
+      <h1>Letsencrypt</h1>
     </header>
     
 
@@ -92,22 +92,26 @@ if (!doNotTrack) {
       <li><article class="li">
   <header>
     <ul class="p-facts">
-      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-03-02T19:38:37JST">Mar 2, 2018</time></li>
+      <li><i class="fa fa-calendar" aria-hidden="true"></i><time datetime="2018-05-31T23:14:08JST">May 31, 2018</time></li>
       <li><i class="fa fa-bookmark" aria-hidden="true"></i><a href="http://blog.eksy.tokyo/post/">post</a></li>
       
     </ul>
-    <h2 class="title"><a href="http://blog.eksy.tokyo/post/gravatar-on-hugo/">GravatarのプロフィールをHUGOで表示する</a></h2>
+    <h2 class="title"><a href="http://blog.eksy.tokyo/post/lego-is-recommend-to-wildcard-certificate-for-letsencrypt/">Let&#39;sEncryptのワイルドカード証明書取得ならlegoがお薦め</a></h2>
   </header>
 
   
-  <div class="summary"><p>Octopressの頃から<a href="https://en.gravatar.com/alalwww">ある(@alalwww)</a>さんの作成された<code>Gravatar aside in Octopress</code>を利用して
-<a href="https://en.gravatar.com">Gravatar</a>からプロフィール表示をしていましたが、HUGOでも利用したいと思いポーティングしてみました。<br />
-と言っても、基本的にはHUGOが利用するGo言語の<a href="https://golang.org/pkg/html/template/">テンプレートライブラリ</a>の記法に置き換えただけです。
+  <div class="summary"><p>Let&rsquo;sEncryptも今年3月に入りようやくワイルドカード証明書に対応しましたが、
+一方でワイルドカード取得にはACMEv2の<code>DNS-01 Challenge</code>によるドメイン所有権確認が必須となりました。</p>
+
+<p>頻繁に証明書更新が必要(最長でも90日)な上、DNSレコードの編集までとなるとあまりカジュアルじゃないですよね。
+そこで今回はDNS-01に対応したACME Clientがないかと調べ<a href="https://github.com/xenolf/lego">lego</a>を見つけたので紹介いたします。</p>
+
+<p>なお、本日(2018/5/31)にリリースされた<code>v1.0.0</code>よりACMEv2対応になっています。
 </p></div>
 
   
   <footer>
-    <a href="http://blog.eksy.tokyo/post/gravatar-on-hugo/" title="GravatarのプロフィールをHUGOで表示する">Read More…</a>
+    <a href="http://blog.eksy.tokyo/post/lego-is-recommend-to-wildcard-certificate-for-letsencrypt/" title="Let&#39;sEncryptのワイルドカード証明書取得ならlegoがお薦め">Read More…</a>
   </footer>
   
 </article>
