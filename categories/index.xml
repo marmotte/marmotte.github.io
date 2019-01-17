@@ -2,29 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on re:inventing the wheel</title>
-    <link>http://blog.eksy.tokyo/categories/</link>
+    <link>https://blog.eksy.tokyo/categories/</link>
     <description>Recent content in Categories on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     
-	<atom:link href="http://blog.eksy.tokyo/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.eksy.tokyo/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>エンジニアブログ</title>
-      <link>http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/</link>
+      <link>https://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/</link>
       <pubDate>Thu, 31 May 2018 23:14:08 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/</guid>
+      <guid>https://blog.eksy.tokyo/categories/%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%8B%E3%82%A2%E3%83%96%E3%83%AD%E3%82%B0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>トピックス</title>
-      <link>http://blog.eksy.tokyo/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF%E3%82%B9/</link>
+      <link>https://blog.eksy.tokyo/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF%E3%82%B9/</link>
       <pubDate>Sat, 03 Mar 2018 10:07:39 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF%E3%82%B9/</guid>
+      <guid>https://blog.eksy.tokyo/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF%E3%82%B9/</guid>
       <description></description>
     </item>
     

@@ -2,82 +2,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on re:inventing the wheel</title>
-    <link>http://blog.eksy.tokyo/tags/golang/</link>
+    <link>https://blog.eksy.tokyo/tags/golang/</link>
     <description>Recent content in Golang on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 24 Apr 2018 18:00:14 +0900</lastBuildDate>
     
-	<atom:link href="http://blog.eksy.tokyo/tags/golang/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.eksy.tokyo/tags/golang/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Go言語のファイル出力が面白い</title>
-      <link>http://blog.eksy.tokyo/post/interesting-file-output-for-golang/</link>
+      <link>https://blog.eksy.tokyo/post/interesting-file-output-for-golang/</link>
       <pubDate>Tue, 24 Apr 2018 18:00:14 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/interesting-file-output-for-golang/</guid>
+      <guid>https://blog.eksy.tokyo/post/interesting-file-output-for-golang/</guid>
       <description>&lt;p&gt;GoLangでちょっとしたコマンドを作っていくと、実行結果を標準出力だったりファイル出力だったり
 切り替えたいと思うことがあります(というか、自分はそう思いました)。
-色々さわってみたところ、&lt;code&gt;os.Stdout&lt;/code&gt;と&lt;code&gt;os.Create&lt;/code&gt;の型が同じだったので備忘録に残しておきます。
-&lt;/p&gt;</description>
+色々さわってみたところ、&lt;code&gt;os.Stdout&lt;/code&gt;と&lt;code&gt;os.Create&lt;/code&gt;の型が同じだったので備忘録に残しておきます。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go言語のappendの使い方</title>
-      <link>http://blog.eksy.tokyo/post/using-append-in-golang/</link>
+      <link>https://blog.eksy.tokyo/post/using-append-in-golang/</link>
       <pubDate>Mon, 16 Apr 2018 19:40:13 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/using-append-in-golang/</guid>
-      <description>&lt;p&gt;Go言語でSliceに要素を追加しようと&lt;code&gt;append()&lt;/code&gt;を利用した際に&amp;rdquo;evaluated but not used&amp;rdquo;というエラーで &lt;strong&gt;2度もハマった&lt;/strong&gt; のでメモ。
-&lt;/p&gt;</description>
+      <guid>https://blog.eksy.tokyo/post/using-append-in-golang/</guid>
+      <description>&lt;p&gt;Go言語でSliceに要素を追加しようと&lt;code&gt;append()&lt;/code&gt;を利用した際に&amp;rdquo;evaluated but not used&amp;rdquo;というエラーで &lt;strong&gt;2度もハマった&lt;/strong&gt; のでメモ。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go言語で自作パッケージのimportではまったのでメモ</title>
-      <link>http://blog.eksy.tokyo/post/import-self-made-packages-in-golang/</link>
+      <link>https://blog.eksy.tokyo/post/import-self-made-packages-in-golang/</link>
       <pubDate>Mon, 09 Apr 2018 19:26:07 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/import-self-made-packages-in-golang/</guid>
+      <guid>https://blog.eksy.tokyo/post/import-self-made-packages-in-golang/</guid>
       <description>&lt;p&gt;これまで、&lt;code&gt;mainパッケージ&lt;/code&gt;だけで済ませられるようなコードくらいしかGo言語で書くことがなかったのですが、
-ちょっと複雑なことをやろうと思い、自作パッケージに手を出したら&lt;code&gt;import&lt;/code&gt;周りでハマったのでメモ。
-&lt;/p&gt;</description>
+ちょっと複雑なことをやろうと思い、自作パッケージに手を出したら&lt;code&gt;import&lt;/code&gt;周りでハマったのでメモ。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go言語でサブコマンド付きCLIアプリを作ってみる(2)</title>
-      <link>http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-2/</link>
+      <link>https://blog.eksy.tokyo/post/implement-sub-commands-in-golang-2/</link>
       <pubDate>Mon, 02 Apr 2018 18:58:31 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-2/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/&#34;&gt;前回&lt;/a&gt;の記事で、
+      <guid>https://blog.eksy.tokyo/post/implement-sub-commands-in-golang-2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/&#34;&gt;前回&lt;/a&gt;の記事で、
 &lt;a href=&#34;https://github.com/mitchellh/cli&#34;&gt;cliパッケージ&lt;/a&gt;を利用してサブコマンドを実装してみましたが、
-今回はサブコマンドの引数(args)周りについて記載したいと思います。
-&lt;/p&gt;</description>
+今回はサブコマンドの引数(args)周りについて記載したいと思います。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go言語でサブコマンド付きCLIアプリを作ってみる(1)</title>
-      <link>http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/</link>
+      <link>https://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/</link>
       <pubDate>Wed, 28 Mar 2018 18:58:31 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/</guid>
+      <guid>https://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/</guid>
       <description>&lt;p&gt;API叩いて云々するようなアプリを作りたいと思うと、やっぱりサブコマンドを実装したCLIツールを
 自作したいと思うのはエンジニアの嵯峨ですよね？w&lt;br /&gt;
 いろいろと調べていたら&lt;a href=&#34;https://github.com/mitchellh/cli&#34;&gt;mitchellh/cli&lt;/a&gt;(以下cliパッケージ)という&amp;rdquo;Go CLI Library&amp;rdquo;を発見したので触ってみました。
-このcliパッケージですが、Packer・Serf・Consul・Vault・Terraform・Nomadなどで使用されているそうです。
-&lt;/p&gt;</description>
+このcliパッケージですが、Packer・Serf・Consul・Vault・Terraform・Nomadなどで使用されているそうです。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go言語で可変長引数(変数)を関数に渡す</title>
-      <link>http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/</link>
+      <link>https://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/</link>
       <pubDate>Tue, 27 Mar 2018 20:20:46 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/</guid>
+      <guid>https://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/</guid>
       <description>&lt;p&gt;Go言語で、&lt;code&gt;func Greeting(say string, who ...string)&lt;/code&gt;のような可変長引数を持つ関数に
-変数で値を渡す方法がわからず四苦八苦したのでメモ。乱筆気味ですが失礼します。
-&lt;/p&gt;</description>
+変数で値を渡す方法がわからず四苦八苦したのでメモ。乱筆気味ですが失礼します。&lt;/p&gt;</description>
     </item>
     
   </channel>

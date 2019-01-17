@@ -2,24 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>トピックス on re:inventing the wheel</title>
-    <link>http://blog.eksy.tokyo/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF%E3%82%B9/</link>
+    <link>https://blog.eksy.tokyo/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF%E3%82%B9/</link>
     <description>Recent content in トピックス on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sat, 03 Mar 2018 10:07:39 +0900</lastBuildDate>
     
-	<atom:link href="http://blog.eksy.tokyo/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF%E3%82%B9/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.eksy.tokyo/categories/%E3%83%88%E3%83%94%E3%83%83%E3%82%AF%E3%82%B9/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>サイト: 「jpEra - 今年は和暦で？」 を作ってみました</title>
-      <link>http://blog.eksy.tokyo/topic/jpera/</link>
+      <link>https://blog.eksy.tokyo/topic/jpera/</link>
       <pubDate>Sat, 03 Mar 2018 10:07:39 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/topic/jpera/</guid>
+      <guid>https://blog.eksy.tokyo/topic/jpera/</guid>
       <description>&lt;p&gt;トピックと言う程のものではありませんが、「&lt;a href=&#34;http://jpera.eksy.tokyo/&#34;&gt;jpEra - 今年は和暦で？&lt;/a&gt;」を勉強がてら作ってみました。
-最近西暦表記メインで年に数回使うか使わないかの年号表記を毎度調べるのもめんどくさいなということで、、、
-&lt;/p&gt;</description>
+最近西暦表記メインで年に数回使うか使わないかの年号表記を毎度調べるのもめんどくさいなということで、、、&lt;/p&gt;</description>
     </item>
     
   </channel>

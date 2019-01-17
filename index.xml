@@ -2,226 +2,209 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>re:inventing the wheel</title>
-    <link>http://blog.eksy.tokyo/</link>
+    <link>https://blog.eksy.tokyo/</link>
     <description>Recent content on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Thu, 31 May 2018 23:14:08 +0900</lastBuildDate>
     
-	<atom:link href="http://blog.eksy.tokyo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.eksy.tokyo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Let&#39;sEncryptのワイルドカード証明書取得ならlegoがお薦め</title>
-      <link>http://blog.eksy.tokyo/post/lego-is-recommend-to-wildcard-certificate-for-letsencrypt/</link>
+      <link>https://blog.eksy.tokyo/post/lego-is-recommend-to-wildcard-certificate-for-letsencrypt/</link>
       <pubDate>Thu, 31 May 2018 23:14:08 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/lego-is-recommend-to-wildcard-certificate-for-letsencrypt/</guid>
+      <guid>https://blog.eksy.tokyo/post/lego-is-recommend-to-wildcard-certificate-for-letsencrypt/</guid>
       <description>&lt;p&gt;Let&amp;rsquo;sEncryptも今年3月に入りようやくワイルドカード証明書に対応しましたが、
 一方でワイルドカード取得にはACMEv2の&lt;code&gt;DNS-01 Challenge&lt;/code&gt;によるドメイン所有権確認が必須となりました。&lt;/p&gt;
 
 &lt;p&gt;頻繁に証明書更新が必要(最長でも90日)な上、DNSレコードの編集までとなるとあまりカジュアルじゃないですよね。
 そこで今回はDNS-01に対応したACME Clientがないかと調べ&lt;a href=&#34;https://github.com/xenolf/lego&#34;&gt;lego&lt;/a&gt;を見つけたので紹介いたします。&lt;/p&gt;
 
-&lt;p&gt;なお、本日(2018/5/31)にリリースされた&lt;code&gt;v1.0.0&lt;/code&gt;よりACMEv2対応になっています。
-&lt;/p&gt;</description>
+&lt;p&gt;なお、本日(2018/5/31)にリリースされた&lt;code&gt;v1.0.0&lt;/code&gt;よりACMEv2対応になっています。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go言語のファイル出力が面白い</title>
-      <link>http://blog.eksy.tokyo/post/interesting-file-output-for-golang/</link>
+      <link>https://blog.eksy.tokyo/post/interesting-file-output-for-golang/</link>
       <pubDate>Tue, 24 Apr 2018 18:00:14 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/interesting-file-output-for-golang/</guid>
+      <guid>https://blog.eksy.tokyo/post/interesting-file-output-for-golang/</guid>
       <description>&lt;p&gt;GoLangでちょっとしたコマンドを作っていくと、実行結果を標準出力だったりファイル出力だったり
 切り替えたいと思うことがあります(というか、自分はそう思いました)。
-色々さわってみたところ、&lt;code&gt;os.Stdout&lt;/code&gt;と&lt;code&gt;os.Create&lt;/code&gt;の型が同じだったので備忘録に残しておきます。
-&lt;/p&gt;</description>
+色々さわってみたところ、&lt;code&gt;os.Stdout&lt;/code&gt;と&lt;code&gt;os.Create&lt;/code&gt;の型が同じだったので備忘録に残しておきます。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go言語のappendの使い方</title>
-      <link>http://blog.eksy.tokyo/post/using-append-in-golang/</link>
+      <link>https://blog.eksy.tokyo/post/using-append-in-golang/</link>
       <pubDate>Mon, 16 Apr 2018 19:40:13 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/using-append-in-golang/</guid>
-      <description>&lt;p&gt;Go言語でSliceに要素を追加しようと&lt;code&gt;append()&lt;/code&gt;を利用した際に&amp;rdquo;evaluated but not used&amp;rdquo;というエラーで &lt;strong&gt;2度もハマった&lt;/strong&gt; のでメモ。
-&lt;/p&gt;</description>
+      <guid>https://blog.eksy.tokyo/post/using-append-in-golang/</guid>
+      <description>&lt;p&gt;Go言語でSliceに要素を追加しようと&lt;code&gt;append()&lt;/code&gt;を利用した際に&amp;rdquo;evaluated but not used&amp;rdquo;というエラーで &lt;strong&gt;2度もハマった&lt;/strong&gt; のでメモ。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>「これは英語のページです」の回避方法</title>
-      <link>http://blog.eksy.tokyo/post/this-is-en-page-but-not/</link>
+      <link>https://blog.eksy.tokyo/post/this-is-en-page-but-not/</link>
       <pubDate>Wed, 11 Apr 2018 21:25:58 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/this-is-en-page-but-not/</guid>
+      <guid>https://blog.eksy.tokyo/post/this-is-en-page-but-not/</guid>
       <description>&lt;p&gt;このブログも少しは記事が溜まったのでちょっと過去の投稿を眺めていると、chromeブラウザから「これは&lt;code&gt;英語&lt;/code&gt;のページです。翻訳しますか？」と言われてしまいました。&lt;br /&gt;
-日本語でしか書く予定がないのでちょっと対策したのでメモ。
-&lt;/p&gt;</description>
+日本語でしか書く予定がないのでちょっと対策したのでメモ。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go言語で自作パッケージのimportではまったのでメモ</title>
-      <link>http://blog.eksy.tokyo/post/import-self-made-packages-in-golang/</link>
+      <link>https://blog.eksy.tokyo/post/import-self-made-packages-in-golang/</link>
       <pubDate>Mon, 09 Apr 2018 19:26:07 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/import-self-made-packages-in-golang/</guid>
+      <guid>https://blog.eksy.tokyo/post/import-self-made-packages-in-golang/</guid>
       <description>&lt;p&gt;これまで、&lt;code&gt;mainパッケージ&lt;/code&gt;だけで済ませられるようなコードくらいしかGo言語で書くことがなかったのですが、
-ちょっと複雑なことをやろうと思い、自作パッケージに手を出したら&lt;code&gt;import&lt;/code&gt;周りでハマったのでメモ。
-&lt;/p&gt;</description>
+ちょっと複雑なことをやろうと思い、自作パッケージに手を出したら&lt;code&gt;import&lt;/code&gt;周りでハマったのでメモ。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go言語でサブコマンド付きCLIアプリを作ってみる(2)</title>
-      <link>http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-2/</link>
+      <link>https://blog.eksy.tokyo/post/implement-sub-commands-in-golang-2/</link>
       <pubDate>Mon, 02 Apr 2018 18:58:31 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-2/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/&#34;&gt;前回&lt;/a&gt;の記事で、
+      <guid>https://blog.eksy.tokyo/post/implement-sub-commands-in-golang-2/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/&#34;&gt;前回&lt;/a&gt;の記事で、
 &lt;a href=&#34;https://github.com/mitchellh/cli&#34;&gt;cliパッケージ&lt;/a&gt;を利用してサブコマンドを実装してみましたが、
-今回はサブコマンドの引数(args)周りについて記載したいと思います。
-&lt;/p&gt;</description>
+今回はサブコマンドの引数(args)周りについて記載したいと思います。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go言語でサブコマンド付きCLIアプリを作ってみる(1)</title>
-      <link>http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/</link>
+      <link>https://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/</link>
       <pubDate>Wed, 28 Mar 2018 18:58:31 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/</guid>
+      <guid>https://blog.eksy.tokyo/post/implement-sub-commands-in-golang-1/</guid>
       <description>&lt;p&gt;API叩いて云々するようなアプリを作りたいと思うと、やっぱりサブコマンドを実装したCLIツールを
 自作したいと思うのはエンジニアの嵯峨ですよね？w&lt;br /&gt;
 いろいろと調べていたら&lt;a href=&#34;https://github.com/mitchellh/cli&#34;&gt;mitchellh/cli&lt;/a&gt;(以下cliパッケージ)という&amp;rdquo;Go CLI Library&amp;rdquo;を発見したので触ってみました。
-このcliパッケージですが、Packer・Serf・Consul・Vault・Terraform・Nomadなどで使用されているそうです。
-&lt;/p&gt;</description>
+このcliパッケージですが、Packer・Serf・Consul・Vault・Terraform・Nomadなどで使用されているそうです。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Go言語で可変長引数(変数)を関数に渡す</title>
-      <link>http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/</link>
+      <link>https://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/</link>
       <pubDate>Tue, 27 Mar 2018 20:20:46 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/</guid>
+      <guid>https://blog.eksy.tokyo/post/passing-variable-length-argument-to-function-in-golang/</guid>
       <description>&lt;p&gt;Go言語で、&lt;code&gt;func Greeting(say string, who ...string)&lt;/code&gt;のような可変長引数を持つ関数に
-変数で値を渡す方法がわからず四苦八苦したのでメモ。乱筆気味ですが失礼します。
-&lt;/p&gt;</description>
+変数で値を渡す方法がわからず四苦八苦したのでメモ。乱筆気味ですが失礼します。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>W3C Markup Validation Serviceが面白い</title>
-      <link>http://blog.eksy.tokyo/post/interesting-service-w3c-markup-validation/</link>
+      <link>https://blog.eksy.tokyo/post/interesting-service-w3c-markup-validation/</link>
       <pubDate>Wed, 21 Mar 2018 20:20:12 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/interesting-service-w3c-markup-validation/</guid>
+      <guid>https://blog.eksy.tokyo/post/interesting-service-w3c-markup-validation/</guid>
       <description>&lt;p&gt;ちょっとした管理ツールでも、WebUIを利用するならW3Cに則ってマークアップしてみたいと思いませんか？
-ネットを漁っていたら&lt;a href=&#34;https://validator.w3.org&#34;&gt;W3C Markup Validation Service&lt;/a&gt;なるサービスを発見したのでご紹介(というか自分へのブクマ)。
-&lt;/p&gt;</description>
+ネットを漁っていたら&lt;a href=&#34;https://validator.w3.org&#34;&gt;W3C Markup Validation Service&lt;/a&gt;なるサービスを発見したのでご紹介(というか自分へのブクマ)。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>ドメイン廃止のためにリダイレクトサイトを作ってみた</title>
-      <link>http://blog.eksy.tokyo/post/creating-redirect-site-for-domain-abolition/</link>
+      <link>https://blog.eksy.tokyo/post/creating-redirect-site-for-domain-abolition/</link>
       <pubDate>Sun, 18 Mar 2018 12:20:52 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/creating-redirect-site-for-domain-abolition/</guid>
+      <guid>https://blog.eksy.tokyo/post/creating-redirect-site-for-domain-abolition/</guid>
       <description>&lt;p&gt;ドメインの廃止に関連でバタバタしてしまい、本ブログの更新がおろそかになっておりますが、
 わずかながらも旧ブログ(廃止ドメイン)にアクセスがありましたので、本ブログへのリダイレクトサイトを
 &lt;a href=&#34;http://sinatrarb.com&#34;&gt;sinatra&lt;/a&gt;+&lt;a href=&#34;https://www.heroku.com/platform&#34;&gt;Heroku&lt;/a&gt;で作ってみました。&lt;/p&gt;
 
-&lt;p&gt;個人的にsinatraはライトにWebアプリケーションが作成できるため、とても気に入っているフレームワークです。
-&lt;/p&gt;</description>
+&lt;p&gt;個人的にsinatraはライトにWebアプリケーションが作成できるため、とても気に入っているフレームワークです。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>AtomでTerminalを使って見た</title>
-      <link>http://blog.eksy.tokyo/post/terminal-on-atom/</link>
+      <link>https://blog.eksy.tokyo/post/terminal-on-atom/</link>
       <pubDate>Mon, 12 Mar 2018 22:23:42 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/terminal-on-atom/</guid>
+      <guid>https://blog.eksy.tokyo/post/terminal-on-atom/</guid>
       <description>&lt;p&gt;プレビュー機能がとても便利なため、長らく&lt;a href=&#34;http://www.markdown.jp/what-is-markdown/&#34;&gt;Markdown&lt;/a&gt;エディタ+ちょっとした開発環境として
 &lt;a href=&#34;https://atom.io&#34;&gt;ATOM&lt;/a&gt;を利用してきましたが、ふとターミナル(コマンドライン)が使えないかなと思い調べたところ
 &lt;a href=&#34;https://atom.io/packages/platformio-ide-terminal&#34;&gt;PlatformIO IDE Terminal&lt;/a&gt;なるパッケージを発見したためインストールして見ました。&lt;/p&gt;
 
-&lt;p&gt;数日使用して見ましたが、とても便利だったため今後の環境づくりのためメモを残しておきます。
-&lt;/p&gt;</description>
+&lt;p&gt;数日使用して見ましたが、とても便利だったため今後の環境づくりのためメモを残しておきます。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>HUGOで生成したサイトをdocker buildしてみた</title>
-      <link>http://blog.eksy.tokyo/post/tried-docker-build-of-hugo-generated-site/</link>
+      <link>https://blog.eksy.tokyo/post/tried-docker-build-of-hugo-generated-site/</link>
       <pubDate>Fri, 09 Mar 2018 20:48:18 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/tried-docker-build-of-hugo-generated-site/</guid>
-      <description>&lt;p&gt;今回のエントリーは、物は試しで的なモノです。正直「だからどうした？」という内容なんですが(苦笑)
-&lt;/p&gt;</description>
+      <guid>https://blog.eksy.tokyo/post/tried-docker-build-of-hugo-generated-site/</guid>
+      <description>&lt;p&gt;今回のエントリーは、物は試しで的なモノです。正直「だからどうした？」という内容なんですが(苦笑)&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>MacOSX上でISOファイルからインストールUSBディスクを作る</title>
-      <link>http://blog.eksy.tokyo/post/create-bootable-usb-from-iso-file/</link>
+      <link>https://blog.eksy.tokyo/post/create-bootable-usb-from-iso-file/</link>
       <pubDate>Tue, 06 Mar 2018 21:11:58 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/create-bootable-usb-from-iso-file/</guid>
+      <guid>https://blog.eksy.tokyo/post/create-bootable-usb-from-iso-file/</guid>
       <description>&lt;p&gt;MacOSXでISOやIMGファイルからブータブルUSBの作成手順。&lt;br /&gt;
 毎度「macOS(今回はHigh Sierra)でどう作るんだっけ？」とググる自分に嫌気を覚えたのでメモ。&lt;/p&gt;
 
 &lt;p&gt;書き込みにはddコマンドを利用しますが、&lt;code&gt;/dev/rdiskX&lt;/code&gt;と&lt;code&gt;/dev/diskX&lt;/code&gt;の速度比較を行った結果、
-やはり&lt;code&gt;/dev/rdiskX&lt;/code&gt;に軍配が上がりました。
-&lt;/p&gt;</description>
+やはり&lt;code&gt;/dev/rdiskX&lt;/code&gt;に軍配が上がりました。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>pyenvインストール後に brew doctor を実行するとWarningが出るのでその対処</title>
-      <link>http://blog.eksy.tokyo/post/after-installing-pyenv-brew-doctor-issued-warning/</link>
+      <link>https://blog.eksy.tokyo/post/after-installing-pyenv-brew-doctor-issued-warning/</link>
       <pubDate>Sun, 04 Mar 2018 10:29:53 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/after-installing-pyenv-brew-doctor-issued-warning/</guid>
+      <guid>https://blog.eksy.tokyo/post/after-installing-pyenv-brew-doctor-issued-warning/</guid>
       <description>&lt;p&gt;pyenvをインストールすると&lt;code&gt;brew doctor&lt;/code&gt;実行時に以下のような &lt;em&gt;Warning&lt;/em&gt; が表示されてしまいます。
-環境構築の都度、対処方法を検索している自分のためのメモ。
-&lt;/p&gt;</description>
+環境構築の都度、対処方法を検索している自分のためのメモ。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>DKIM用TXTレコード設定時、Route53に「CharacterStringTooLong」と怒られた</title>
-      <link>http://blog.eksy.tokyo/post/route53-said-character-string-too-long/</link>
+      <link>https://blog.eksy.tokyo/post/route53-said-character-string-too-long/</link>
       <pubDate>Sat, 03 Mar 2018 17:15:22 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/route53-said-character-string-too-long/</guid>
+      <guid>https://blog.eksy.tokyo/post/route53-said-character-string-too-long/</guid>
       <description>&lt;p&gt;久しぶりにDKIM用TXTレコードを設定しようとRoute53に追加したら、&lt;code&gt;CharacterStringTooLong (Value is too long) encountered&lt;/code&gt;と怒られたのでメモ。&lt;/p&gt;
 
-&lt;p&gt;冷静に考えれば、2048bitのキーを指定したので「そりゃそうだよね」と言う感じです。
-&lt;/p&gt;</description>
+&lt;p&gt;冷静に考えれば、2048bitのキーを指定したので「そりゃそうだよね」と言う感じです。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>サイト: 「jpEra - 今年は和暦で？」 を作ってみました</title>
-      <link>http://blog.eksy.tokyo/topic/jpera/</link>
+      <link>https://blog.eksy.tokyo/topic/jpera/</link>
       <pubDate>Sat, 03 Mar 2018 10:07:39 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/topic/jpera/</guid>
+      <guid>https://blog.eksy.tokyo/topic/jpera/</guid>
       <description>&lt;p&gt;トピックと言う程のものではありませんが、「&lt;a href=&#34;http://jpera.eksy.tokyo/&#34;&gt;jpEra - 今年は和暦で？&lt;/a&gt;」を勉強がてら作ってみました。
-最近西暦表記メインで年に数回使うか使わないかの年号表記を毎度調べるのもめんどくさいなということで、、、
-&lt;/p&gt;</description>
+最近西暦表記メインで年に数回使うか使わないかの年号表記を毎度調べるのもめんどくさいなということで、、、&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>GravatarのプロフィールをHUGOで表示する</title>
-      <link>http://blog.eksy.tokyo/post/gravatar-on-hugo/</link>
+      <link>https://blog.eksy.tokyo/post/gravatar-on-hugo/</link>
       <pubDate>Fri, 02 Mar 2018 19:38:37 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/gravatar-on-hugo/</guid>
+      <guid>https://blog.eksy.tokyo/post/gravatar-on-hugo/</guid>
       <description>&lt;p&gt;Octopressの頃から&lt;a href=&#34;https://en.gravatar.com/alalwww&#34;&gt;ある(@alalwww)&lt;/a&gt;さんの作成された&lt;code&gt;Gravatar aside in Octopress&lt;/code&gt;を利用して
 &lt;a href=&#34;https://en.gravatar.com&#34;&gt;Gravatar&lt;/a&gt;からプロフィール表示をしていましたが、HUGOでも利用したいと思いポーティングしてみました。&lt;br /&gt;
-と言っても、基本的にはHUGOが利用するGo言語の&lt;a href=&#34;https://golang.org/pkg/html/template/&#34;&gt;テンプレートライブラリ&lt;/a&gt;の記法に置き換えただけです。
-&lt;/p&gt;</description>
+と言っても、基本的にはHUGOが利用するGo言語の&lt;a href=&#34;https://golang.org/pkg/html/template/&#34;&gt;テンプレートライブラリ&lt;/a&gt;の記法に置き換えただけです。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>HUGOで始めるブロガー生活</title>
-      <link>http://blog.eksy.tokyo/post/starting-hugo/</link>
+      <link>https://blog.eksy.tokyo/post/starting-hugo/</link>
       <pubDate>Thu, 01 Mar 2018 20:06:24 +0900</pubDate>
       
-      <guid>http://blog.eksy.tokyo/post/starting-hugo/</guid>
+      <guid>https://blog.eksy.tokyo/post/starting-hugo/</guid>
       <description>&lt;p&gt;以前、別ドメインで&lt;a href=&#34;http://octopress.org/&#34;&gt;Octopress&lt;/a&gt;+&lt;a href=&#34;https://pages.github.com/&#34;&gt;GitHub Pages&lt;/a&gt;でブログを立ち上げていましたが、更新が滞り早数年。
 ドメイン廃止を期に、&lt;a href=&#34;https://gohugo.io/&#34;&gt;HUGO&lt;/a&gt;を使って心機一転ブログを立て直すことにいたしました。&lt;br /&gt;
 自分的にOctopressは、作業PCの入れ替え後に環境構築を怠り放置する結果になってしまったので、インストールが楽なものという事で、、、&lt;/p&gt;</description>
