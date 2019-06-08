@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on re:inventing the wheel</title>
+    <title>HUGO on re:inventing the wheel</title>
     <link>https://blog.eksy.tokyo/tags/hugo/</link>
-    <description>Recent content in Hugo on re:inventing the wheel</description>
+    <description>Recent content in HUGO on re:inventing the wheel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Wed, 11 Apr 2018 21:25:58 +0900</lastBuildDate>
